@@ -16,8 +16,8 @@
 | Vai trò | Họ và tên thật | Nghề nghiệp / Đối tượng | Ngoài lớp HW03? | Ngoài IT? | SĐT / Zalo / Email *(che 4 số giữa)* | Ngày giờ thực hiện | Kênh thực hiện | File / Link Video bằng chứng | Trạng thái |
 | :-: | :--- | :--- | :---: | :---: | :--- | :---: | :---: | :--- | :---: |
 | **Pilot** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
-| **P1** | Hà Anh Tuấn | Sinh viên IT năm 4 (VGU) | ☑ Có | ☐ Không *(IT)* | `093****045` | *(Cần điền)* | Online (có record) | `[Vietnamese (auto-generated)] Software Testing homework 3 - candidate 1 [DownSub.com].txt` *(+ link video)* | Đã nhập *(chờ ngày giờ & timestamp video)* |
-| **P2** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
+| **P1** | Hà Anh Tuấn | Sinh viên IT năm 4 (VGU) | ☑ Có | ☐ Không *(IT)* | `093****045` | *(Cần điền)* | Online (YouTube Record) | [Video P1](https://youtu.be/hSGZJhJrAhA) + [`candidate 1 transcript`](./%5BVietnamese%20(auto-generated)%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) | Đã nhập *(chờ ngày giờ & timestamp video)* |
+| **P2** | Trần Kim Ngân | Sinh viên IT năm 4 (HCMUS) | ☐ Có *(xác nhận ngoài lớp HW03)* | ☐ Không *(IT)* | `098****128` | *(Cần điền)* | Online (YouTube Record) | [Video P2](https://youtu.be/1EfXQpylgmQ) *(YouTube: Dat Thanh)* | Đã nhập *(chờ ngày giờ, xác nhận ngoài lớp & timestamp)* |
 | **P3** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
 | **P4** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
 | **P5** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
@@ -68,7 +68,7 @@
 - **Người tham gia:** `Hà Anh Tuấn` | **Nghề nghiệp:** `Sinh viên IT năm 4 (VGU)` | **Ngoài lớp HW03:** `Có (học VGU, ngoài lớp HW03 HCMUS; thuộc ngành IT)`
 - **SĐT/Zalo/Email *(che 4 số giữa)*:** `093****045`
 - **Ngày giờ:** `[Cần bạn bổ sung]` | **Hình thức:** `Online (có quay màn hình & thu âm)`
-- **Bằng chứng quay màn hình + âm thanh:** `[Vietnamese (auto-generated)] Software Testing homework 3 - candidate 1 [DownSub.com].txt` *(cần bổ sung link/tên file video)*
+- **Bằng chứng quay màn hình + âm thanh:** [https://youtu.be/hSGZJhJrAhA](https://youtu.be/hSGZJhJrAhA) · Transcript: [`candidate 1 [DownSub.com].txt`](./%5BVietnamese%20(auto-generated)%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt)
 - **Thời gian hoàn thành (Time on Task):** `[Cần xem lại video để điền mm:ss — file .txt DownSub không có timestamp]`
 - **Kết quả tác vụ:** `Thành công hoàn toàn` *(tìm được iPhone 15 Pro Max giá 30 triệu, vào chi tiết, thêm vào giỏ và vào giỏ hàng kiểm tra)*
 - **Ghi chú bối cảnh kịch bản thực tế:** Ở phiên này, điều phối viên giao nhiệm vụ tìm *"điện thoại iPhone giá 30 triệu"* (khác với kịch bản tai nghe trong Phase 1; chưa test bước tìm từ khóa không có kết quả `"Sony"` và xem Footer).
@@ -105,35 +105,39 @@
 
 ## 4. Biên bản Phiên P2
 
-- **Người tham gia:** `[Họ tên]` | **Nghề nghiệp:** `[...]` | **Ngoài lớp HW03:** `[Có]`
-- **SĐT/Zalo/Email *(che 4 số giữa)*:** `[09xx***xxx]`
-- **Ngày giờ:** `YYYY-MM-DD HH:mm` | **Hình thức:** `[Trực tiếp / Google Meet]`
-- **Bằng chứng quay màn hình + âm thanh:** `[Tên file video / link]`
-- **Thời gian hoàn thành (Time on Task):** `[mm:ss]`
-- **Kết quả tác vụ:** `[Thành công hoàn toàn / Thành công có trợ giúp / Thất bại]`
-- **Điểm SEQ (1–7):** `[.../7]` | **Điểm SUS:** `[.../100]`
+- **Người tham gia:** `Trần Kim Ngân` | **Nghề nghiệp:** `Sinh viên IT năm 4 (HCMUS)` | **Ngoài lớp HW03:** `[Cần xác nhận không học cùng lớp HW03 này; thuộc ngành IT]`
+- **SĐT/Zalo/Email *(che 4 số giữa)*:** `098****128`
+- **Ngày giờ:** `[Cần bạn bổ sung]` | **Hình thức:** `Online (có quay màn hình & thu âm)`
+- **Bằng chứng quay màn hình + âm thanh:** [https://youtu.be/1EfXQpylgmQ](https://youtu.be/1EfXQpylgmQ) *(YouTube: Dat Thanh — `Software Testing homework 3 - candidate 2`)*
+- **Thời gian hoàn thành (Time on Task):** `[Cần xem lại video để điền mm:ss — transcript không có timestamp]`
+- **Kết quả tác vụ:** `Thành công hoàn toàn` *(tìm MacBook $\rightarrow$ xem chi tiết $\rightarrow$ thêm vào giỏ $\rightarrow$ vào Giỏ hàng xác minh)*
+- **Ghi chú bối cảnh kịch bản thực tế:** Điều phối viên giao tìm sản phẩm *"MacBook"*; ở bước xem chi tiết và sau khi thêm vào giỏ, điều phối viên có nhắc lại bước tiếp theo (*"xem thông tin xong thì bạn thêm giỏ hàng giúp mình"*, *"kiếm chỗ nào vào kiểm tra"*).
+- **Điểm SEQ (1–7):** `6 / 7` | **Điểm SUS:** `92.5 / 100` *(Grade A)*
 
 ### Nhật ký Quan sát (Observation Log — P2)
 
 | Mốc thời gian | Thao tác quan sát được | Trích dẫn Think-Aloud | Điểm nghẽn / Lỗi / Do dự |
 | :---: | :--- | :--- | :--- |
-| `00:00` | Bắt đầu xem trang Home | `"..."` | |
-| `00:xx` | | `"..."` | |
-| `00:xx` | | `"..."` | |
-| `00:xx` | | `"..."` | |
+| `[Từ video]` | Tìm kiếm từ khóa `MacBook` và mở trang Chi tiết sản phẩm | `"Ừ để mình xem chi tiết nha. Ok. Ủa giờ mình phải thêm vô giỏ hàng hả bạn hay là giờ..."` | Hơi phân vân bước tiếp theo sau khi đọc xong chi tiết (cần xác nhận từ điều phối viên). |
+| `[Từ video]` | Bấm nút `"Thêm vào giỏ hàng"` tại Product Detail | `"Ok thông tin giỏ hàng sao được... ồ đã thiệt nhưng mà mình không thấy nó thông báo nhỉ."` | **Phát hiện trực tiếp:** Thiếu Toast / thông báo xác nhận và thiếu badge giỏ hàng sau khi bấm thêm. |
+| `[Từ video]` | Tự tìm và mở trang Giỏ hàng (`/cart`) để kiểm tra sản phẩm đã thêm | `"Ok giỏ hàng đây. Sản phẩm, giá, số lượng, thành tiền. Mình xóa thử nha."` | Kiểm tra đủ các cột dữ liệu; định bấm nút `"Xóa"` thì điều phối viên báo dừng đúng ranh giới M2. |
 
 ### Điểm SUS (1–5) — P2
 
 | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Tổng quy đổi | Điểm SUS (`/100`) |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| | | | | | | | | | | | |
+| 4 | 1 | 5 | 1 | 4 | 1 | 4* | 1 | 5 | 1 | **37** | **92.5** |
+
+> [!NOTE]
+> - **Q5 (`4`):** P2 chủ động giải thích lý do trừ 1 điểm: *"mình cho là 4 điểm, trừ 1 điểm tại không có thông báo thôi."*
+> - **Q7 (`4*`):** Trong bản ghi, điều phối viên đọc nhầm câu hỏi thành *"học cách xây dựng trang web này rất nhanh"* (thay vì *"học cách sử dụng trang web"*); P2 vẫn chấm `4`.
 
 ### Phỏng vấn Mở (Probe Questions — P2)
-1. **Độ rõ ràng (Clarity):** `...`
-2. **Khả năng khôi phục sau lỗi (Error Recovery):** `...`
-3. **Tốc độ & Hiệu quả (Speed):** `...`
-4. **Độ tin cậy & An tâm (Trust):** `...`
-5. **Câu hỏi bổ sung theo phiên (Session-specific):** `...`
+1. **Độ rõ ràng (Clarity):** Trả lời *"Mình không"* khi hỏi về nút gây bối rối, nhưng trong lúc thao tác Think-Aloud có nhận xét rõ *"không thấy nó thông báo nhỉ"* khi bấm thêm vào giỏ.
+2. **Khả năng khôi phục sau lỗi (Error Recovery):** *"Hiện tại thì mình chưa thấy nhưng mà nói chung những thông tin hiện lên thì cũng đủ để xài."*
+3. **Tốc độ & Hiệu quả (Speed):** Nhanh, chỉ tốn thời gian *"lúc mình đọc thông tin thôi"*.
+4. **Độ tin cậy & An tâm (Trust):** *"Ờ mình có, chắc chắn."*
+5. **Câu hỏi bổ sung theo phiên (Session-specific):** Dù chấm SUS cao (`92.5`), P2 vẫn chỉ ra đúng khiếm khuyết phản hồi hệ thống tại Q5 (*"trừ 1 điểm tại không có thông báo thôi"*) và muốn thử thao tác tiếp nút `"Xóa"` trong giỏ hàng.
 
 ---
 

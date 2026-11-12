@@ -60,12 +60,19 @@ Tài liệu chi tiết tại [`report/task2_phase1_plan_and_instruments.md`](./t
 - **Kịch bản mục tiêu (Goal-Oriented Scenario):** Yêu cầu người dùng tự kiểm tra độ tin cậy cửa hàng, tìm mua **2 chiếc tai nghe chống ồn** ngân sách $\le 6.000.000$ ₫/chiếc (kích hoạt tìm kiếm `"Sony"` rỗng $\rightarrow$ `"tai nghe"` $\rightarrow$ `Tai nghe AirPods Pro 2`), thêm vào giỏ và kiểm tra trong `/cart`.
 - **Bộ công cụ chuẩn:** Lời dẫn *Set the Stage + Think-Aloud*, quy tắc quan sát trung lập (chỉ gợi ý tối thiểu sau 2 phút kẹt), **SEQ (1–7)**, bảng **SUS 10 câu** tiếng Việt chuẩn hóa, **5 câu phỏng vấn mở** (Clarity, Error Recovery, Speed, Trust, Session-specific), biểu mẫu **Observation Log Sheet**, và biểu mẫu web hỗ trợ điều phối tại [`scripts/task2_usability_form.html`](../scripts/task2_usability_form.html).
 
-### 3.2. Giai đoạn 2 & 3 — Tiến độ Thu thập Thực tế (`1/7` người tham gia)
+### 3.2. Giai đoạn 2 — Thu thập Dữ liệu Thực tế (`2 / 7` phiên hoàn chỉnh)
 Biên bản ghi nhận tại [`report/task2_phase2_session_logs.md`](./task2_phase2_session_logs.md):
-- **Đã thu thập `P1`:** **Hà Anh Tuấn** (Sinh viên IT năm 4 — VGU, SĐT `093****045`, ngoài lớp HW03) từ bản ghi âm/transcript thực tế ([`candidate 1 [DownSub.com].txt`](./%5BVietnamese%20(auto-generated)%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt)):
-  - **Kết quả:** Thành công hoàn toàn | **SEQ:** `6/7` | **SUS:** `82.5/100` *(Grade A — có ghi chú đối chiếu audio cho câu phủ định Q6 và Q9)*.
-  - **Phát hiện UX:** Người tham gia khựng lại ở nút *"Thêm vào giỏ"* vì thiếu thông báo xác nhận (*"Không biết thêm chưa nhưng mà có vẻ thêm rồi á"*), phải tự bấm vào trang Giỏ hàng để kiểm chứng.
-- **Chờ hoàn thiện:** Phiên **Pilot**, **6 người tham gia còn lại (`P2`–`P7`)** và phần tổng hợp **Phase 3** sẽ được cập nhật ngay khi thực hiện xong các buổi phỏng vấn người thật.
+- **Đã hoàn thành `P1`:** **Hà Anh Tuấn** (Sinh viên IT năm 4 — VGU, SĐT `093****045`, ngoài lớp HW03) — [Video P1](https://youtu.be/hSGZJhJrAhA) + [`candidate 1 transcript`](./%5BVietnamese%20(auto-generated)%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) | **Kết quả:** Thành công hoàn toàn | **SEQ:** `6/7` | **SUS:** `82.5/100` *(Grade A — có ghi chú kiểm tra Q6, Q9)*.
+- **Đã hoàn thành `P2`:** **Trần Kim Ngân** (Sinh viên IT năm 4 — HCMUS, SĐT `098****128`, chờ xác nhận ngoài lớp HW03) — [Video P2](https://youtu.be/1EfXQpylgmQ) | **Kết quả:** Thành công hoàn toàn *(có nhắc bước từ ĐPV)* | **SEQ:** `6/7` | **SUS:** `92.5/100` *(Grade A — chủ động trừ 1 điểm ở Q5 vì thiếu thông báo)*.
+- **Đã ghi nhận định danh `P3`:** **Đinh Ngọc Khánh** (Sinh viên IT — HCMUT, ngoài lớp HW03; chưa thực hiện phỏng vấn). **Pilot** và **`P4`–`P7`** chưa thu thập do giới hạn thời gian.
+
+### 3.3. Giai đoạn 3 — Phân tích & Tổng hợp Kết quả trên Mẫu Thực tế (`n = 2`)
+Báo cáo chi tiết tại [`report/task2_phase3_analysis_and_report.md`](./task2_phase3_analysis_and_report.md):
+- **Chỉ số định lượng (`P1`, `P2`):** Tỷ lệ hoàn thành Flow F2 đạt **`100%` (`2/2`)**, điểm **SEQ trung bình = `6.0 / 7`**, điểm **SUS trung bình = `87.5 / 100`** (`82.5` và `92.5` — Grade A). Điểm SUS cao một phần do cả 2 ứng viên đều là sinh viên IT năm 4 có khả năng tự suy luận giao diện.
+- **Điểm nghẽn UX nổi bật (Systemic Design Issues):**
+  1. **`UX-01` (Major — `2/2` người gặp):** Thiếu hoàn toàn Toast xác nhận & Badge đếm số lượng trên Header sau khi bấm *"Thêm vào giỏ hàng"* (`P1` phải vào `/cart` tự kiểm chứng; `P2` trừ điểm ở SUS Q5 vì *"không thấy nó thông báo nhỉ"*), ánh xạ trực tiếp tới GitHub Issues [`#11`](https://github.com/otis275275/testing-hw03/issues/11), [`#16`](https://github.com/otis275275/testing-hw03/issues/16), [`#18`](https://github.com/otis275275/testing-hw03/issues/18), [`#19`](https://github.com/otis275275/testing-hw03/issues/19).
+  2. **`UX-02` (Minor $\rightarrow$ Major — `2/2` người gặp):** Đứt gãy dẫn hướng bước tiếp theo sau khi xem chi tiết/thêm giỏ (thiếu Breadcrumbs, Active State và CTA chuyển nhanh sang `/cart` — Issues [`#13`](https://github.com/otis275275/testing-hw03/issues/13), [`#14`](https://github.com/otis275275/testing-hw03/issues/14)).
+  3. **`UX-03` (Cosmetic/Scope — `1/2` người nêu):** Dữ liệu demo chỉ có 5 sản phẩm nên giảm ý nghĩa tìm kiếm (`P1` chấm SUS Q1 = `3/5`; liên quan phân trang Issue [`#10`](https://github.com/otis275275/testing-hw03/issues/10)).
 
 ---
 

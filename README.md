@@ -20,7 +20,7 @@
 | No. | Criteria | Max Grade | Self-Assessed Grade | Ghi chú hiện trạng |
 | :-: | :--- | :---: | :---: | :--- |
 | **1** | **Task 1 — GUI Checklist** *(design + execution + bug report)* | **30** | **29** | Hoàn thành 49 mục (> 40), phản biện AI (40) vs Human (9), thực thi đầy đủ, 22 ảnh bằng chứng, Excel `.xlsx`, báo cáo lỗi & 22 GitHub Issues (`#1`–`#22`). |
-| **2** | **Task 2 — Usability Evaluation** *(task scenario + 7 sessions + analysis)* | **40** | *(Chờ hoàn thành)* | Đã xong Phase 1 (`task2_phase1_plan_and_instruments.md`), công cụ điều phối HTML, và đã điền `1/7` người tham gia thật (`P1`: Hà Anh Tuấn). Đang chờ Pilot + `P2`–`P7` + Phase 3. |
+| **2** | **Task 2 — Usability Evaluation** *(task scenario + 7 sessions + analysis)* | **40** | *(Cần cập nhật)* | Đã xong Phase 1, công cụ điều phối HTML, Phase 2 (`2/7` phiên thật: `P1` Hà Anh Tuấn `82.5` & `P2` Trần Kim Ngân `92.5`; `P3` mới có tên) và **Phase 3 phân tích trên `n=2`** (`task2_phase3_analysis_and_report.md`, SUS TB `87.5`, SEQ `6.0/7`). |
 | **3** | **Task 3 — Cross-Browser / Cross-Platform** *(≥ 3 platforms)* | **20** | **19** | Đã chạy thực thi 49 mục trên 3 engine: Chrome, Firefox, Safari/WebKit (`69` ảnh có overlay MSSV + họ tên + email), phát hiện lỗi khác biệt `CHK-23` trên Firefox. |
 | **4** | **Agent Skills** *(skills + demo videos)* | **10** | *(Chờ link video)* | Đã hoàn thiện 2 bộ skill (`gui-testing`, `usability-testing`) tại `skills/` và `.agents/skills/`; đang chờ bạn quay và gắn link YouTube demo. |
 | | **Total** | **100** | *(Cập nhật trước khi nén nộp)* | |
@@ -39,7 +39,7 @@
 | **Số mục Không đạt (Failed) — Task 1 (Chrome)** | **22 mục (44.9%)** | `IA-01`: 5, `IA-02`: 4, `IA-03`: 6, `IA-04`: 7 — có 22 ảnh chụp bằng chứng |
 | **Số nền tảng Cross-Browser (Task 3)** | **3 nền tảng** | **Chrome** (`27P/22F`), **Firefox** (`26P/23F`), **Safari/WebKit** (`27P/22F`) |
 | **Tổng số Bug phát hiện & Báo cáo** | **23 bugs** | **22 GUI bugs** đã log lên GitHub Issues (`#1`–`#22`) + **1 Cross-Browser bug** (`CHK-23` Firefox) |
-| **Số người tham gia Usability (Task 2)** | **1 / 7** *(đang tiến hành)* | Đã hoàn thành `P1` (Hà Anh Tuấn, `093****045`, SEQ `6/7`, SUS `82.5`); chờ Pilot + `P2`–`P7` |
+| **Số người tham gia Usability (Task 2)** | **2 / 7** *(đã phân tích Phase 3 trên `n=2`)* | Đã hoàn thành `P1` (Hà Anh Tuấn, `093****045`, SUS `82.5`) & `P2` (Trần Kim Ngân, `098****128`, SUS `92.5`); SUS TB `87.5/100`, SEQ `6.0/7`; `P3` (Đinh Ngọc Khánh) chờ test |
 | **Số Agent Skills đã xây dựng** | **2 skills** | `gui-testing` & `usability-testing` (đồng bộ ở `skills/` và `.agents/skills/`) |
 
 ### Video Minh họa (Demo Videos — Task 4)
@@ -55,7 +55,7 @@
 | **Main Report** | [`report/main_report.md`](./report/main_report.md) | [`report/main_report.pdf`](./report/main_report.pdf) |
 | **GUI Checklist (> 40 items)** | [`testcase/gui_checklist_m2.md`](./testcase/gui_checklist_m2.md) | [`testcase/gui_checklist_m2.xlsx`](./testcase/gui_checklist_m2.xlsx) |
 | **Bug Report & GitHub Issues** | [`report/bug_report.md`](./report/bug_report.md) | [`report/bug_report.pdf`](./report/bug_report.pdf) |
-| **Task 2 Usability Plan & Logs** | [`report/task2_phase1_plan_and_instruments.md`](./report/task2_phase1_plan_and_instruments.md)<br>[`report/task2_phase2_session_logs.md`](./report/task2_phase2_session_logs.md) | [`report/task2_phase1_plan_and_instruments.pdf`](./report/task2_phase1_plan_and_instruments.pdf)<br>*(bảng điểm & form hỗ trợ: [`scripts/task2_usability_form.html`](./scripts/task2_usability_form.html))* |
+| **Task 2 Usability Plan, Logs & Analysis** | [`report/task2_phase1_plan_and_instruments.md`](./report/task2_phase1_plan_and_instruments.md)<br>[`report/task2_phase2_session_logs.md`](./report/task2_phase2_session_logs.md)<br>[`report/task2_phase3_analysis_and_report.md`](./report/task2_phase3_analysis_and_report.md) | [`report/task2_phase1_plan_and_instruments.pdf`](./report/task2_phase1_plan_and_instruments.pdf)<br>*(bảng điểm & form hỗ trợ: [`scripts/task2_usability_form.html`](./scripts/task2_usability_form.html))* |
 | **Task 3 Cross-Browser Report** | [`report/task3_cross_browser.md`](./report/task3_cross_browser.md) | [`report/task3_cross_browser.pdf`](./report/task3_cross_browser.pdf) |
 | **Screenshots Evidence** | Task 1 & GitHub Issues: [`report/screenshots/`](./report/screenshots/)<br>Task 3 (69 ảnh): [`report/screenshots/task3/`](./report/screenshots/task3/) | — |
 | **AI Critique (200–300 words)** | [`report/AI_critique.md`](./report/AI_critique.md) | [`report/AI_critique.pdf`](./report/AI_critique.pdf) |

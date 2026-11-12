@@ -862,3 +862,55 @@ bay gio ngoai tru task 2, hay kiem tra cac yeu cau conf thieu va lam cho tui, tu
 5. Tạo Báo cáo chính [`report/main_report.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/main_report.md), giữ nguyên đặc tả SUT tại [`SRS_EShop.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/SRS_EShop.md) và thay [`README.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/README.md) đúng chuẩn nộp bài (§14–§15 Self-Assessment Table & Test Summary Report).
 6. Viết [`scripts/generate_pdf.js`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/scripts/generate_pdf.js) xuất đồng bộ các file `.pdf` cho báo cáo chính, bug report, cross-browser, Task 2 Phase 1, GUI checklist, AI Critique và AI Audit (`AI.log.pdf`).
 7. Tạo các Git commit theo từng bước thực hiện trên nhánh local và xuất [`git_commit_log.txt`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/git_commit_log.txt).
+
+
+---
+
+## Interaction 20
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 20:54:46
+- **User Prompt**:
+```
+================================================================================
+TRANSCRIPT: Software Testing homework 3 - candidate 2
+Kênh YouTube: Dat Thanh
+Nội dung: Buổi Usability Testing (Kiểm thử độ khả dụng) & Đánh giá thang điểm SUS
+================================================================================
+[Bản đối thoại chi tiết & Raw verbatim transcript của candidate 2]
+
+oke tiepp theo day la transcript nguoi thu 2, ten Traafn Kim Ngaan. SV IT nam 4 hcmus 0981809128
+```
+- **AI Output**:
+Đã điền đầy đủ thông tin và kết quả của **P2** vào [`report/task2_phase2_session_logs.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase2_session_logs.md#L106-L140):
+- Người tham gia: `Trần Kim Ngân` — Sinh viên IT năm 4 (HCMUS) | SĐT đã che 4 số giữa: `098****128`.
+- Kết quả tác vụ: Thành công hoàn toàn (tìm `MacBook` $\rightarrow$ xem chi tiết $\rightarrow$ thêm vào giỏ $\rightarrow$ kiểm tra trong `/cart`).
+- Điểm SEQ: `6 / 7`; Điểm SUS: `92.5 / 100` (Grade A — `Q1=4, Q2=1, Q3=5, Q4=1, Q5=4, Q6=1, Q7=4*, Q8=1, Q9=5, Q10=1`, tổng quy đổi = `37`).
+- Phát hiện UX nổi bật: P2 nhận xét trực tiếp thiếu thông báo khi thêm vào giỏ (*"ồ đã thiệt nhưng mà mình không thấy nó thông báo nhỉ"*) và chủ động trừ 1 điểm tại SUS Q5 (*"trừ 1 điểm tại không có thông báo thôi"*). Lưu ý kiểm tra xác nhận ngoài lớp HW03 và bổ sung ngày giờ, timestamp video.
+
+---
+
+## Interaction 21
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 20:57:09
+- **User Prompt**:
+```
+https://youtu.be/hSGZJhJrAhA link 1
+https://youtu.be/1EfXQpylgmQ link 2
+hay chen link vao cho tui
+```
+- **AI Output**:
+Đã chèn chính xác hai link video YouTube bằng chứng vào [`report/task2_phase2_session_logs.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase2_session_logs.md#L19-L20):
+- **P1 (Hà Anh Tuấn):** `https://youtu.be/hSGZJhJrAhA` (cập nhật ở bảng tổng hợp và mục P1).
+- **P2 (Trần Kim Ngân):** `https://youtu.be/1EfXQpylgmQ` (cập nhật ở bảng tổng hợp và mục P2).
+
+---
+
+## Interaction 22
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 20:58:36
+- **User Prompt**:
+```
+roi append vao @[c:\Users\Administrator\Desktop\tesstinbg\testing-hw03\AI.log.md] nhung gi ta da lam cho tui
+```
+- **AI Output**:
+Đã append đầy đủ các lượt trao đổi (Interactions 20–22) vào [`AI.log.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/AI.log.md) và cập nhật lại bản PDF [`AI.log.pdf`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/AI.log.pdf).
