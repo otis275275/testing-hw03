@@ -104,3 +104,4 @@ Hai Agent Skills đã được đóng gói đầy đủ tại [`skills/`](../ski
 - Nhận xét phản biện AI (200–300 từ): [`report/AI_critique.md`](./AI_critique.md)
 - Nhật ký sử dụng AI đầy đủ: [`AI.log.md`](../AI.log.md)
 - Lịch sử Git Commit: [`git_commit_log.txt`](../git_commit_log.txt)
+

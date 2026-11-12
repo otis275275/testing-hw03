@@ -259,3 +259,4 @@ Toàn bộ 22 khiếm khuyết phát hiện từ 49 mục GUI Checklist (`CHK-01
 - **Mong đợi:** Chặn hoàn toàn ký tự không phải chữ số trên mọi trình duyệt (Chrome, Firefox, Safari).
 
 ![CHK-23 Firefox Cross-Browser Defect](./screenshots/task3/firefox/CHK-23.png)
+
