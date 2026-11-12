@@ -693,3 +693,172 @@ Tôi đã xây dựng kịch bản tự động hóa chụp màn hình, thực h
 ### 3. Cập nhật Báo cáo Checklist
 
 Toàn bộ 22 mục **FAIL** trong file [`testcase/gui_checklist_m2.md`](file:///d:/ALL_SOURCE_CODE/Learning/Testing/eshop-sut/testcase/gui_checklist_m2.md) đã được bổ sung liên kết trực tiếp đến từng ảnh bằng chứng tương ứng.
+
+
+---
+
+## Interaction 14
+- **Model**: Gemini (Antigravity)
+- **Thời gian**: 2026-11-12 19:50:25
+- **User Prompt**:
+```
+bay gio
+Task 2 — Usability Evaluation
+You will run a small-sample, moderated usability evaluation of the single end-to-end flow you
+selected in §5, with seven (7) real participants (seven sessions, one per participant). Review the
+relevant course lectures on usability evaluation before you begin.
+Phase 1 — Plan & prepare
+Define your objectives. State clearly what you want to learn — for example, where users hit
+navigation bottlenecks on the chosen flow, or how confident they feel completing it.
+
+Write the task scenario. Turn your chosen flow into a realistic, goal-oriented scenario (e.g.,
+"Find a winter coat under 500,000 ₫ and check out using a discount coupon") — give
+participants a goal, not step-by-step instructions.
+Prepare the instruments. A standard usability scale to be completed after each session — SUS
+or UEQ-S (or a custom scale with a clear written justification) — plus a short set of open-ended
+probe questions covering, at minimum: clarity, error recovery, speed, and trust.
+Recruit seven (7) real participants who match your target user profile, with verifiable contact
+details (Zalo, email, or phone, with the middle four digits masked). Participants must be people
+outside this class — students currently enrolled in HW03 are not eligible. Non-IT / non-tester
+participants are preferred for authentic usability feedback, though this is not strictly required.
+Run a pilot session with one person to catch an unclear scenario, broken flow, or timing
+problems; refine before the real sessions.
+Phase 2 — Conduct the sessions (one per participant)
+Set the stage. Tell the participant you are testing the product, not them, and ask them to think
+aloud while they work.
+Observe neutrally. Do not give leading hints or explain the interface; step in only if the
+participant is completely stuck.
+Capture evidence. Record the screen (and audio, with consent) and take structured notes on
+friction points, errors, hesitations, and verbalised frustration.
+Close the session. Have the participant complete the SUS / UEQ-S scale, then ask your probe
+questions to dig into the difficulties you observed.
+Phase 3 — Analyse & report
+Score the SUS / UEQ-S results across the seven participants.
+Synthesise your notes: group similar pain points together, and separate isolated bugs from
+systemic design issues.
+Prioritise by severity (for example, blockers that prevent task completion versus minor visual
+complaints).
+Report genuine bugs both in the Markdown report and on your GitHub Issues page, with a
+screenshot attached to each issue.
+The TA may randomly call two (2) participants to verify them. Impersonation results in 0 points
+for Task 2.
+
+ta se lam task 2, lam phase 1 truoc, append prompt nay vao cuoi file @[c:\Users\Administrator\Desktop\tesstinbg\testing-hw03\AI.log.md]
+```
+- **AI Output**:
+Tôi đã hoàn thiện toàn bộ tài liệu **Giai đoạn 1 (Phase 1 — Plan & Prepare)** cho **Task 2 — Usability Evaluation** của phân hệ thành viên M2 tại file [`report/task2_phase1_plan_and_instruments.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase1_plan_and_instruments.md), bám sát quy trình trong skill `usability-testing` và dữ liệu sản phẩm thực tế của EShop SUT (`backend/database.js`):
+
+1. **Xác định Mục tiêu Đánh giá (Evaluation Objectives):** 5 mục tiêu đo lường luồng end-to-end **F2** (*Tìm sản phẩm $\rightarrow$ Xem chi tiết $\rightarrow$ Chọn số lượng & Thêm vào giỏ $\rightarrow$ Vào trang Giỏ hàng để xác minh sản phẩm đã được lưu*, không thực hiện checkout/coupon để giữ đúng ranh giới M2).
+2. **Thiết kế Kịch bản Mục tiêu (Goal-Oriented Task Scenario):** Hiệu chỉnh kịch bản phù hợp với dữ liệu thực tế trong EShop (`Tai nghe AirPods Pro 2`, giá `6.000.000 ₫`, chống ồn chủ động): yêu cầu người dùng tìm mua 2 chiếc tai nghe chống ồn ngân sách $\le 6.000.000$ ₫/chiếc và xác nhận trong giỏ hàng, tuyệt đối không hướng dẫn từng bước click.
+3. **Chuẩn bị Bộ Công cụ Đo lường & Điều phối:**
+   - Lời dẫn mở đầu chuẩn hóa (Set the Stage + Think-Aloud + Quy tắc quan sát trung lập 2 phút).
+   - **SEQ (Single Ease Question, 1–7)** ngay sau tác vụ.
+   - **Bảng 10 câu hỏi chuẩn SUS (System Usability Scale)** tiếng Việt kèm công thức quy đổi điểm (0–100) và bảng phân hạng A–F.
+   - **Bộ câu hỏi phỏng vấn mở (Probe Questions)** bao phủ đủ 4 khía cạnh: *Clarity, Error Recovery, Speed, Trust*.
+   - **Biểu mẫu Nhật ký Quan sát Thực địa (Observation Log Sheet)** để ghi nhận mốc thời gian, câu nói Think-Aloud và điểm nghẽn trong Phase 2.
+4. **Bảng Kế hoạch Tuyển 7 Người tham gia & Quy trình Pilot (Anti-Cheat Template):** Danh sách chờ điền thông tin người thật ngoài lớp HW03 (Pilot + P1–P7, che 4 số giữa SĐT/Zalo) cùng checklist chạy thử Pilot trước khi bước sang Phase 2.
+
+
+
+---
+
+## Interaction 15
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 20:04:23
+- **User Prompt**:
+```
+doc source code 
+Task 2 — Usability Evaluation 
+You will run a small-sample, moderated usability evaluation of the single end-to-end flow you selected in §5, with seven (7) real participants (seven sessions, one per participant). Review the relevant course lectures on usability evaluation before you begin. 
+Phase 1 — Plan & prepare 
+Define your objectives. State clearly what you want to learn — for example, where users hit navigation bottlenecks on the chosen flow, or how confident they feel completing it.
+Write the task scenario. Turn your chosen flow into a realistic, goal-oriented scenario (e.g., "Find a winter coat under 500,000 ₫ and check out using a discount coupon") — give participants a goal, not step-by-step instructions. 
+Prepare the instruments. A standard usability scale to be completed after each session — SUS or UEQ-S (or a custom scale with a clear written justification) — plus a short set of open-ended probe questions covering, at minimum: clarity, error recovery, speed, and trust. Recruit seven (7) real participants who match your target user profile, with verifiable contact details (Zalo, email, or phone, with the middle four digits masked). Participants must be people outside this class — students currently enrolled in HW03 are not eligible. Non-IT / non-tester participants are preferred for authentic usability feedback, though this is not strictly required. Run a pilot session with one person to catch an unclear scenario, broken flow, or timing problems; refine before the real sessions. 
+Phase 2 — Conduct the sessions (one per participant) 
+Set the stage. Tell the participant you are testing the product, not them, and ask them to think aloud while they work. 
+Observe neutrally. Do not give leading hints or explain the interface; step in only if the participant is completely stuck. 
+Capture evidence. Record the screen (and audio, with consent) and take structured notes on friction points, errors, hesitations, and verbalised frustration. 
+Close the session. Have the participant complete the SUS / UEQ-S scale, then ask your probe questions to dig into the difficulties you observed. 
+Phase 3 — Analyse & report 
+Score the SUS / UEQ-S results across the seven participants. 
+Synthesise your notes: group similar pain points together, and separate isolated bugs from systemic design issues. 
+Prioritise by severity (for example, blockers that prevent task completion versus minor visual complaints). 
+Report genuine bugs both in the Markdown report and on your GitHub Issues page, with a screenshot attached to each issue. 
+The TA may randomly call two (2) participants to verify them. Impersonation results in 0 points for Task 2. 
+
+
+bay gio ta sex lam task 2, phase 1 da xong roi do
+```
+- **AI Output**:
+Đã đọc toàn bộ mã nguồn liên quan đến luồng **F2** của EShop SUT (`App.jsx`, `Home.jsx`, `ProductDetail.jsx`, `Cart.jsx`, `CartContext.jsx`, `backend/database.js`, `backend/server.js`) và tài liệu Phase 1 (`report/task2_phase1_plan_and_instruments.md`).
+- Chỉ ra các hành vi thực tế trong mã nguồn ảnh hưởng trực tiếp đến người dùng khi test Phase 2: tìm `"Sony"` để trống không có Empty State; bấm `"Thêm vào giỏ hàng"` tại `ProductDetail.jsx` bị nuốt ở lần click đầu (`clickCount === 0`); bấm `"Thêm vào giỏ"` trên `Home.jsx` không có phản hồi thị giác; ô số lượng không chặn số âm/0/thập phân; Header thiếu badge giỏ hàng; giỏ hàng lưu trên React state nên F5 sẽ reset.
+- Xác nhận nguyên tắc Anti-Cheat: không tự tạo dữ liệu 7 người tham gia hay điểm SUS giả; đề xuất hỗ trợ tạo biểu mẫu ghi chép / form web cục bộ để bạn điều phối Pilot + 7 phiên thật và gửi dữ liệu để AI tổng hợp Phase 3.
+
+---
+
+## Interaction 16
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 20:12:01
+- **User Prompt**:
+```
+oke bay gio tao form cho 7 nguoi dung di, de tui fill vao cho de
+```
+- **AI Output**:
+Đã tạo 2 biểu mẫu đồng bộ cho Pilot + P1–P7 bám sát kế hoạch Phase 1:
+1. `scripts/task2_usability_form.html`: Form web chạy trực tiếp trên trình duyệt (tích hợp tab Pilot + P1–P7 + Tổng hợp, đồng hồ bấm giờ, nút tự động che 4 số giữa, chọn SEQ 1–7, chọn 10 câu SUS tự tính điểm & Grade, bảng Observation Log, 5 câu Probe Questions, tự lưu `localStorage` và xuất Markdown/JSON).
+2. `report/task2_phase2_session_logs.md`: Biểu mẫu Markdown điền trực tiếp theo từng phiên Pilot và P1–P7.
+
+---
+
+## Interaction 17
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 20:31:14
+- **User Prompt**:
+```
+@[c:\Users\Administrator\Desktop\tesstinbg\testing-hw03\report\[Vietnamese (auto-generated)] Software Testing homework 3 - candidate 1 [DownSub.com].txt] , day ;la transcript ban dau tien, hay fill vao cho tui
+```
+- **AI Output**:
+Đã trích xuất dữ liệu thực tế từ transcript `candidate 1` và điền vào mục **P1** trong `report/task2_phase2_session_logs.md`:
+- Kết quả tác vụ: Thành công hoàn toàn (`iPhone 15` 30 triệu $\rightarrow$ Product Detail $\rightarrow$ Thêm vào giỏ $\rightarrow$ vào Giỏ hàng xác minh).
+- Điểm SEQ: `6/7`; Điểm SUS: `82.5/100` (`Q1=3, Q2=1, Q3=5, Q4=1, Q5=4, Q6=5*, Q7=5, Q8=1, Q9=5*, Q10=1`, tổng quy đổi `33`).
+- Ghi chú kiểm tra lại audio gốc cho Q6 (P1 nói *"nhất quán rồi"* nhưng đọc điểm `5`), Q9 (auto-caption ghi `"N"`), và bổ sung định danh thật + Time on Task từ video gốc.
+
+---
+
+## Interaction 18
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 20:33:57
+- **User Prompt**:
+```
+0938133045
+ten la Haf Anh Tuan 
+Sinh vien IT nam 4 VGU
+dien vao cho hoan thien cho tui
+```
+- **AI Output**:
+Đã cập nhật đầy đủ thông tin định danh của **P1** trong `report/task2_phase2_session_logs.md`:
+- Họ tên: `Hà Anh Tuấn`
+- Nghề nghiệp / Đối tượng: `Sinh viên IT năm 4 (VGU)` — Ngoài lớp HW03 (`Có`), Ngoài IT (`Không`)
+- SĐT xác thực đã che 4 số giữa: `093****045`
+
+---
+
+## Interaction 19
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 20:40:16
+- **User Prompt**:
+```
+**HW03 – GUI & Usability** 
+[Toàn bộ đề bài HW03 – GUI & Usability từ mục 1 đến mục 17]
+
+bay gio ngoai tru task 2, hay kiem tra cac yeu cau conf thieu va lam cho tui, tui chuan bi nop bai. toan bo cuojc hoi thoai nay append vao@[c:\Users\Administrator\Desktop\tesstinbg\testing-hw03\AI.log.md] cho tui, lam di va dung hoi lai
+```
+- **AI Output**:
+Đã rà soát toàn bộ yêu cầu §6–§15 của đề bài HW03 (ngoại trừ phần thu thập Pilot + P2–P7 và phân tích Phase 3 của Task 2 đang chờ người thật) và hoàn thiện đồng bộ các hạng mục còn thiếu:
+1. Chuẩn hóa [`testcase/gui_checklist_m2.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/testcase/gui_checklist_m2.md): sửa toàn bộ đường dẫn ảnh sang đường dẫn tương đối (`../report/screenshots/CHK-XX.png|jpg`), đồng bộ tỷ lệ thống kê thực tế (**49 mục**: 40 AI-Generated `81.6%` + 9 Human Added `18.4%`; **27 PASS / 22 FAIL = 55.1%**).
+2. Tạo file Excel chuẩn OOXML [`testcase/gui_checklist_m2.xlsx`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/testcase/gui_checklist_m2.xlsx) (qua [`scripts/generate_excel_checklist.js`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/scripts/generate_excel_checklist.js)) gồm 3 sheet: `Test Summary`, `GUI Checklist (49 Items)` (kèm kết quả Cross-Browser & link GitHub Issue), và `Human Critiques`.
+3. Chụp ảnh trang GitHub Issues thực tế (`report/screenshots/github_issues_page.png` & `github_issue_detail_16.png`) và tạo [`report/bug_report.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/bug_report.md) tổng hợp đầy đủ **22 GUI Bugs** (`#1`–`#22` trên `otis275275/testing-hw03`) kèm ảnh minh chứng và **1 lỗi Cross-Browser (`CHK-23` Firefox)**.
+4. Viết báo cáo phản biện AI bắt buộc **241 từ** (đúng khung 200–300 từ) tại [`report/AI_critique.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/AI_critique.md).
+5. Tạo Báo cáo chính [`report/main_report.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/main_report.md), giữ nguyên đặc tả SUT tại [`SRS_EShop.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/SRS_EShop.md) và thay [`README.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/README.md) đúng chuẩn nộp bài (§14–§15 Self-Assessment Table & Test Summary Report).
+6. Viết [`scripts/generate_pdf.js`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/scripts/generate_pdf.js) xuất đồng bộ các file `.pdf` cho báo cáo chính, bug report, cross-browser, Task 2 Phase 1, GUI checklist, AI Critique và AI Audit (`AI.log.pdf`).
+7. Tạo các Git commit theo từng bước thực hiện trên nhánh local và xuất [`git_commit_log.txt`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/git_commit_log.txt).
