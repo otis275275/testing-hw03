@@ -986,3 +986,19 @@ day la link vid agent skill demo Link Video Demo YouTube (Task 4)
 - **AI Output**:
 - Gắn link Video Demo YouTube Task 4 (`https://youtu.be/MBv7Ssz-0uY`) vào [`report/main_report.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/main_report.md) và [`README.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/README.md).
 - Cập nhật điểm tự đánh giá mục **4. Agent Skills** trong [`assessment.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/assessment.md) lên **`9 / 10`**, nâng tổng điểm **Self-Assessed Grade** lên **`82 / 100`** (`23120228_HW03_AI_GUIUsability_082.zip`).
+
+---
+
+## Interaction 28
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 21:32:30
+- **User Prompt**:
+```
+tu dong fill timestamp vao cho tui
+tim sptam 1 cai la 8h30 pm ngay 12/11/2026
+ 1 cai la 9h pm cung ngay
+```
+- **AI Output**:
+- Trích xuất trực tiếp các mốc thời gian thực tế từ transcript có timestamp trên 2 video YouTube (`hSGZJhJrAhA` và `1EfXQpylgmQ`) qua trình duyệt Playwright và kết hợp ngày giờ thực hiện do sinh viên cung cấp (`P1`: `2026-11-12 20:30`, `P2`: `2026-11-12 21:00`).
+- Cập nhật đầy đủ `Time on Task` (**P1:** `00:37` tác vụ / `07:11` tổng video; **P2:** `00:56` tác vụ / `04:50` tổng video; trung bình `00:47`) và timestamp chi tiết từng bước trong [`report/task2_phase2_session_logs.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase2_session_logs.md) & [`report/task2_phase3_analysis_and_report.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase3_analysis_and_report.md).
+- Xuất đồng bộ lại toàn bộ 10 file PDF và cập nhật `git_commit_log.txt`.

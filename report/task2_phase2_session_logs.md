@@ -16,8 +16,8 @@
 | Vai trò | Họ và tên thật | Nghề nghiệp / Đối tượng | Ngoài lớp HW03? | Ngoài IT? | SĐT / Zalo / Email *(che 4 số giữa)* | Ngày giờ thực hiện | Kênh thực hiện | File / Link Video bằng chứng | Trạng thái |
 | :-: | :--- | :--- | :---: | :---: | :--- | :---: | :---: | :--- | :---: |
 | **Pilot** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
-| **P1** | Hà Anh Tuấn | Sinh viên IT năm 4 (VGU) | ☑ Có | ☐ Không *(IT)* | `093****045` | *(Cần điền)* | Online (YouTube Record) | [Video P1](https://youtu.be/hSGZJhJrAhA) + [`candidate 1 transcript`](./%5BVietnamese%20%28auto-generated%29%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) | Đã nhập *(chờ ngày giờ & timestamp video)* |
-| **P2** | Trần Kim Ngân | Sinh viên IT năm 4 (HCMUS) | ☐ Có *(xác nhận ngoài lớp HW03)* | ☐ Không *(IT)* | `098****128` | *(Cần điền)* | Online (YouTube Record) | [Video P2](https://youtu.be/1EfXQpylgmQ) *(YouTube: Dat Thanh)* | Đã nhập *(chờ ngày giờ, xác nhận ngoài lớp & timestamp)* |
+| **P1** | Hà Anh Tuấn | Sinh viên IT năm 4 (VGU) | ☑ Có | ☐ Không *(IT)* | `093****045` | `2026-11-12 20:30` | Online (YouTube Record) | [Video P1](https://youtu.be/hSGZJhJrAhA) + [`candidate 1 transcript`](./%5BVietnamese%20%28auto-generated%29%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) | Hoàn thành (`00:37` tác vụ / `07:11` video) |
+| **P2** | Trần Kim Ngân | Sinh viên IT năm 4 (HCMUS) | ☐ Có *(xác nhận ngoài lớp HW03)* | ☐ Không *(IT)* | `098****128` | `2026-11-12 21:00` | Online (YouTube Record) | [Video P2](https://youtu.be/1EfXQpylgmQ) *(YouTube: Dat Thanh)* | Hoàn thành (`00:56` tác vụ / `04:50` video; chờ xác nhận ngoài lớp) |
 | **P3** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
 | **P4** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
 | **P5** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
@@ -67,9 +67,9 @@
 
 - **Người tham gia:** `Hà Anh Tuấn` | **Nghề nghiệp:** `Sinh viên IT năm 4 (VGU)` | **Ngoài lớp HW03:** `Có (học VGU, ngoài lớp HW03 HCMUS; thuộc ngành IT)`
 - **SĐT/Zalo/Email *(che 4 số giữa)*:** `093****045`
-- **Ngày giờ:** `[Cần bạn bổ sung]` | **Hình thức:** `Online (có quay màn hình & thu âm)`
+- **Ngày giờ:** `2026-11-12 20:30` | **Hình thức:** `Online (có quay màn hình & thu âm)`
 - **Bằng chứng quay màn hình + âm thanh:** [https://youtu.be/hSGZJhJrAhA](https://youtu.be/hSGZJhJrAhA) · Transcript: [`candidate 1 [DownSub.com].txt`](./%5BVietnamese%20%28auto-generated%29%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt)
-- **Thời gian hoàn thành (Time on Task):** `[Cần xem lại video để điền mm:ss — file .txt DownSub không có timestamp]`
+- **Thời gian hoàn thành (Time on Task):** `00:37` *(từ `00:49` bắt đầu thao tác tới `01:26` xong xác minh giỏ; `00:44` tính đến lúc ĐPV chốt dừng ở `01:33`; tổng thời lượng video cả SEQ/SUS/Probe là `07:11`)*
 - **Kết quả tác vụ:** `Thành công hoàn toàn` *(tìm được iPhone 15 Pro Max giá 30 triệu, vào chi tiết, thêm vào giỏ và vào giỏ hàng kiểm tra)*
 - **Ghi chú bối cảnh kịch bản thực tế:** Ở phiên này, điều phối viên giao nhiệm vụ tìm *"điện thoại iPhone giá 30 triệu"* (khác với kịch bản tai nghe trong Phase 1; chưa test bước tìm từ khóa không có kết quả `"Sony"` và xem Footer).
 - **Điểm SEQ (1–7):** `6 / 7` | **Điểm SUS:** `82.5 / 100` *(Grade A — xem ghi chú ở Q6 và Q9 bên dưới)*
@@ -78,10 +78,10 @@
 
 | Mốc thời gian | Thao tác quan sát được | Trích dẫn Think-Aloud | Điểm nghẽn / Lỗi / Do dự |
 | :---: | :--- | :--- | :--- |
-| `[Từ video]` | Nghe nhiệm vụ tìm iPhone giá 30 triệu và kiểm tra giỏ hàng | `"Ok bạn. Bạn muốn phone 30 triệu hả?"` | Xác nhận lại mục tiêu trước khi thao tác. |
-| `[Từ video]` | Nhập từ khóa `iPhone` vào thanh tìm kiếm trên Home | `"Đây mình đã bấm keyword iPhone thì nó đã lọc lại được một cái iPhone 15 3[0] triệu mình sẽ bấm nha."` | Tìm kiếm lọc nhanh (do tổng chỉ có 5 sản phẩm); bấm vào trang chi tiết. *(Auto-caption ghi nhầm "3 triệu")*. |
-| `[Từ video]` | Bấm nút `"Thêm vào giỏ hàng"` trên trang Chi tiết | `"Ok bây giờ thêm vào giỏ hàng nhé. Mình đã thêm vào giỏ hàng."` *(Phỏng vấn sau phiên: "Không biết thêm chưa nhưng mà có vẻ thêm rồi á. Cái nút nó chỉ đậm/đập tí thôi.")* | Thiếu thông báo xác nhận / toast / badge số lượng trên Header khiến người dùng không chắc chắn nút đã chạy chưa. |
-| `[Từ video]` | Tự vào trang Giỏ hàng để kiểm tra lại sản phẩm, sau đó hỏi có cần thanh toán không | *(Phỏng vấn: "Mình bấm thêm vào giỏ không thấy phản hồi lắm thì mình vô giỏ xem thì mình mới biết là nó có được thêm.")* / `"xong rồi mình có thanh toán không bạn ơi?"` | Phải tự vào `/cart` để xác minh vì thiếu phản hồi hệ thống; tác vụ dừng tại đây theo phạm vi M2. |
+| `00:49` | Nghe xong nhiệm vụ tìm iPhone giá 30 triệu và xác nhận lại mục tiêu trước khi làm | `"Ok bạn. Bạn muốn phone 30 triệu hả?"` | Xác nhận lại mục tiêu trước khi thao tác (`00:01`–`00:42` là phần ĐPV giới thiệu). |
+| `01:02` | Nhập từ khóa `iPhone` vào thanh tìm kiếm trên Home | `"Đây mình đã bấm keyword iPhone thì nó đã lọc lại được một cái iPhone 15 3[0] triệu mình sẽ bấm nha."` | Tìm kiếm lọc nhanh (do tổng chỉ có 5 sản phẩm); bấm vào trang chi tiết. *(Auto-caption ghi nhầm "3 triệu")*. |
+| `01:15` | Bấm nút `"Thêm vào giỏ hàng"` trên trang Chi tiết | `"Ok bây giờ thêm vào giỏ hàng nhé."` *(Phỏng vấn tại `05:15`: "Không biết thêm chưa nhưng mà có vẻ thêm rồi á. Cái nút nó chỉ đậm/đập tí thôi.")* | Thiếu thông báo xác nhận / toast / badge số lượng trên Header khiến người dùng không chắc chắn nút đã chạy chưa. |
+| `01:26`–`01:33` | Tự vào trang Giỏ hàng để kiểm tra lại sản phẩm, sau đó hỏi có cần thanh toán không | `"Mình đã thêm vào gió hàng xong rồi mình có thanh toán không bạn ơi?"` *(Phỏng vấn tại `05:50`: "Mình bấm thêm vào giỏ không thấy phản hồi lắm thì mình vô giỏ xem...")* | Phải tự vào `/cart` để xác minh vì thiếu phản hồi hệ thống; tác vụ dừng tại `01:33` theo phạm vi M2. |
 
 ### Điểm SUS (1–5) — P1
 
@@ -107,9 +107,9 @@
 
 - **Người tham gia:** `Trần Kim Ngân` | **Nghề nghiệp:** `Sinh viên IT năm 4 (HCMUS)` | **Ngoài lớp HW03:** `[Cần xác nhận không học cùng lớp HW03 này; thuộc ngành IT]`
 - **SĐT/Zalo/Email *(che 4 số giữa)*:** `098****128`
-- **Ngày giờ:** `[Cần bạn bổ sung]` | **Hình thức:** `Online (có quay màn hình & thu âm)`
+- **Ngày giờ:** `2026-11-12 21:00` | **Hình thức:** `Online (có quay màn hình & thu âm)`
 - **Bằng chứng quay màn hình + âm thanh:** [https://youtu.be/1EfXQpylgmQ](https://youtu.be/1EfXQpylgmQ) *(YouTube: Dat Thanh — `Software Testing homework 3 - candidate 2`)*
-- **Thời gian hoàn thành (Time on Task):** `[Cần xem lại video để điền mm:ss — transcript không có timestamp]`
+- **Thời gian hoàn thành (Time on Task):** `00:56` *(từ `00:26` bắt đầu tìm kiếm & xem chi tiết tới `01:22` khi hoàn tất kiểm tra Giỏ hàng và ĐPV chốt dừng; tổng thời lượng video cả SEQ/SUS/Probe là `04:50`)*
 - **Kết quả tác vụ:** `Thành công hoàn toàn` *(tìm MacBook $\rightarrow$ xem chi tiết $\rightarrow$ thêm vào giỏ $\rightarrow$ vào Giỏ hàng xác minh)*
 - **Ghi chú bối cảnh kịch bản thực tế:** Điều phối viên giao tìm sản phẩm *"MacBook"*; ở bước xem chi tiết và sau khi thêm vào giỏ, điều phối viên có nhắc lại bước tiếp theo (*"xem thông tin xong thì bạn thêm giỏ hàng giúp mình"*, *"kiếm chỗ nào vào kiểm tra"*).
 - **Điểm SEQ (1–7):** `6 / 7` | **Điểm SUS:** `92.5 / 100` *(Grade A)*
@@ -118,9 +118,9 @@
 
 | Mốc thời gian | Thao tác quan sát được | Trích dẫn Think-Aloud | Điểm nghẽn / Lỗi / Do dự |
 | :---: | :--- | :--- | :--- |
-| `[Từ video]` | Tìm kiếm từ khóa `MacBook` và mở trang Chi tiết sản phẩm | `"Ừ để mình xem chi tiết nha. Ok. Ủa giờ mình phải thêm vô giỏ hàng hả bạn hay là giờ..."` | Hơi phân vân bước tiếp theo sau khi đọc xong chi tiết (cần xác nhận từ điều phối viên). |
-| `[Từ video]` | Bấm nút `"Thêm vào giỏ hàng"` tại Product Detail | `"Ok thông tin giỏ hàng sao được... ồ đã thiệt nhưng mà mình không thấy nó thông báo nhỉ."` | **Phát hiện trực tiếp:** Thiếu Toast / thông báo xác nhận và thiếu badge giỏ hàng sau khi bấm thêm. |
-| `[Từ video]` | Tự tìm và mở trang Giỏ hàng (`/cart`) để kiểm tra sản phẩm đã thêm | `"Ok giỏ hàng đây. Sản phẩm, giá, số lượng, thành tiền. Mình xóa thử nha."` | Kiểm tra đủ các cột dữ liệu; định bấm nút `"Xóa"` thì điều phối viên báo dừng đúng ranh giới M2. |
+| `00:26`–`00:39` | Tìm kiếm từ khóa `MacBook` và mở trang Chi tiết sản phẩm | `"Ừ để mình xem chi tiết nha. Ok. Ủa giờ mình phải thêm vô giỏ hàng hả bạn hay là giờ..."` | Hơi phân vân bước tiếp theo sau khi đọc xong chi tiết ở `00:39` (cần xác nhận từ điều phối viên). |
+| `00:48`–`01:01` | Bấm nút `"Thêm vào giỏ hàng"` tại Product Detail | `"Ok thông tin... ồ đã thiệt nhưng mà mình không thấy nó thông báo nhỉ."` | **Phát hiện trực tiếp tại `01:01`:** Thiếu Toast / thông báo xác nhận và thiếu badge giỏ hàng sau khi bấm thêm. |
+| `01:12`–`01:22` | Tự tìm và mở trang Giỏ hàng (`/cart`) để kiểm tra sản phẩm đã thêm | `"Ok giỏ hàng đây. Sản phẩm, giá, số lượng, thành tiền. Mình xóa thử nha."` | Kiểm tra đủ các cột dữ liệu; định bấm nút `"Xóa"` lúc `01:20` thì ĐPV báo dừng ở `01:22` đúng ranh giới M2. |
 
 ### Điểm SUS (1–5) — P2
 
