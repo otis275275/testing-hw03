@@ -1,4 +1,34 @@
-﻿commit 1d11faaae5a9b3fa778bc649168f477624dc0f37
+﻿commit 84c9af0b5457b4297e1df218ca9f6cc8c05034f5
+Author: Lê Trung Thành Đạt <23120228@student.hcmus.edu.vn>
+Date:   Thu Nov 12 21:42:58 2026 +0700
+
+    Docs & Sync: Resync Task 2 Phase 2 PDF, update AI log, and refresh git commit log
+
+ AI.log.md                                    |  16 ++++++++++++++++
+ AI.log.pdf                                   | Bin 687442 -> 698950 bytes
+ assessment.pdf                               | Bin 160897 -> 160897 bytes
+ report/AI_critique.pdf                       | Bin 82463 -> 82463 bytes
+ report/bug_report.pdf                        | Bin 3103786 -> 3103786 bytes
+ report/main_report.pdf                       | Bin 628265 -> 628265 bytes
+ report/task2_phase1_plan_and_instruments.pdf | Bin 221304 -> 221304 bytes
+ report/task2_phase2_session_logs.pdf         | Bin 364794 -> 369033 bytes
+ report/task2_phase3_analysis_and_report.pdf  | Bin 326982 -> 326982 bytes
+ report/task3_cross_browser.pdf               | Bin 330918 -> 330918 bytes
+ testcase/gui_checklist_m2.pdf                | Bin 204973 -> 204973 bytes
+ 11 files changed, 16 insertions(+)
+
+commit 7317bd48101480cbc234e759233048c6fe539ad9
+Author: Lê Trung Thành Đạt <23120228@student.hcmus.edu.vn>
+Date:   Thu Nov 12 21:40:59 2026 +0700
+
+    2nd
+
+ 5_transcript_usability_testing_sus.md | 361 ++++++++++++++++++++++++++++++++++
+ git_commit_log.txt                    |  85 +++++++-
+ report/task2_phase2_session_logs.md   |  20 +-
+ 3 files changed, 454 insertions(+), 12 deletions(-)
+
+commit 1d11faaae5a9b3fa778bc649168f477624dc0f37
 Author: Lê Trung Thành Đạt <23120228@student.hcmus.edu.vn>
 Date:   Thu Nov 12 21:32:52 2026 +0700
 
