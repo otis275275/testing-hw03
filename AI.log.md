@@ -1002,3 +1002,19 @@ tim sptam 1 cai la 8h30 pm ngay 12/11/2026
 - Trích xuất trực tiếp các mốc thời gian thực tế từ transcript có timestamp trên 2 video YouTube (`hSGZJhJrAhA` và `1EfXQpylgmQ`) qua trình duyệt Playwright và kết hợp ngày giờ thực hiện do sinh viên cung cấp (`P1`: `2026-11-12 20:30`, `P2`: `2026-11-12 21:00`).
 - Cập nhật đầy đủ `Time on Task` (**P1:** `00:37` tác vụ / `07:11` tổng video; **P2:** `00:56` tác vụ / `04:50` tổng video; trung bình `00:47`) và timestamp chi tiết từng bước trong [`report/task2_phase2_session_logs.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase2_session_logs.md) & [`report/task2_phase3_analysis_and_report.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase3_analysis_and_report.md).
 - Xuất đồng bộ lại toàn bộ 10 file PDF và cập nhật `git_commit_log.txt`.
+
+---
+
+## Interaction 29
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 21:42:40
+- **User Prompt**:
+```
+[Bổ sung thông tin thật P3, P4 & đồng bộ PDF / git_commit_log.txt]
+Dinh Ngoc Khanh sv IT nam 4 HCMUT 0895069207 (2026-11-12 21:15, từ chối ghi hình)
+Lam My Phuong sv IT nam 4 HCMUT 0941574740 (2026-11-12 21:30, từ chối ghi hình)
+check laij gitcommit log -> sua lai ban moi di
+```
+- **AI Output**:
+- Cập nhật thông tin định danh & thời gian thực tế cho **P3** (`Đinh Ngọc Khánh`, `089****207`, `2026-11-12 21:15`, từ chối ghi hình) và **P4** (`Lâm Mỹ Phương`, `094****740`, `2026-11-12 21:30`, từ chối ghi hình) vào [`report/task2_phase2_session_logs.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase2_session_logs.md); đồng thời giữ nguyên từ chối nhập dữ liệu mâu thuẫn từ file mô phỏng.
+- Xuất lại toàn bộ 10 file PDF (cập nhật [`report/task2_phase2_session_logs.pdf`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase2_session_logs.pdf) và [`AI.log.pdf`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/AI.log.pdf)) và xuất lại [`git_commit_log.txt`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/git_commit_log.txt).
