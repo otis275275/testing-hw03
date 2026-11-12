@@ -1,0 +1,1039 @@
+{
+  "student": {
+    "mssv": "23120228",
+    "fullName": "Lê Trung Thành Đạt",
+    "email": "23120228@student.hcmus.edu.vn"
+  },
+  "browsers": {
+    "chrome": {
+      "checklistAudit": [
+        {
+          "id": "CHK-01",
+          "status": "FAIL",
+          "observed": "Found 2 <h1> tags: [\"Danh sách sản phẩm\",\"Hiển thị 5 sản phẩm\"]"
+        },
+        {
+          "id": "CHK-02",
+          "status": "PASS",
+          "observed": "ProductDetail <h1> count=1"
+        },
+        {
+          "id": "CHK-03",
+          "status": "FAIL",
+          "observed": "Sample price: 30,000,000 VND"
+        },
+        {
+          "id": "CHK-04",
+          "status": "PASS",
+          "observed": "Price=\"30,000,000 ₫\", color=rgb(220, 38, 38)"
+        },
+        {
+          "id": "CHK-05",
+          "status": "PASS",
+          "observed": "Row1 sameTop=true, sameHeight=true"
+        },
+        {
+          "id": "CHK-06",
+          "status": "PASS",
+          "observed": "Action buttons aligned horizontally: true"
+        },
+        {
+          "id": "CHK-07",
+          "status": "FAIL",
+          "observed": "Home btn=rgb(37, 99, 235) vs Detail btn=rgb(22, 163, 74)"
+        },
+        {
+          "id": "CHK-08",
+          "status": "PASS",
+          "observed": "h1=30px > cardTitle=20px"
+        },
+        {
+          "id": "CHK-09",
+          "status": "PASS",
+          "observed": "horizontalOverflow=false"
+        },
+        {
+          "id": "CHK-10",
+          "status": "PASS",
+          "observed": "Footer=\"© 2026 EShop SUT. Dành cho mục đích kiểm thử.\", bg=rgb(31, 41, 55)"
+        },
+        {
+          "id": "CHK-11",
+          "status": "PASS",
+          "observed": "Cols desktop=3, tablet=3, mobile=1"
+        },
+        {
+          "id": "CHK-12",
+          "status": "PASS",
+          "observed": "Header paddingLeft=16px"
+        },
+        {
+          "id": "CHK-13",
+          "status": "FAIL",
+          "observed": "bg before=rgb(239, 68, 68), hover=rgb(239, 68, 68)"
+        },
+        {
+          "id": "CHK-14",
+          "status": "FAIL",
+          "observed": "Raw error text=\"Database ErrorSQLITE_ERROR: unrecognized token: \"'\"\""
+        },
+        {
+          "id": "CHK-15",
+          "status": "PASS",
+          "observed": "Placeholder=\"Tìm kiếm...\""
+        },
+        {
+          "id": "CHK-16",
+          "status": "PASS",
+          "observed": "Filtered count=1/5"
+        },
+        {
+          "id": "CHK-17",
+          "status": "PASS",
+          "observed": "Enter filtered count=1"
+        },
+        {
+          "id": "CHK-18",
+          "status": "PASS",
+          "observed": "Reset count=5/5"
+        },
+        {
+          "id": "CHK-19",
+          "status": "PASS",
+          "observed": "Default qty=\"1\""
+        },
+        {
+          "id": "CHK-20",
+          "status": "FAIL",
+          "observed": "min=\"null\" (accepts negative -5)"
+        },
+        {
+          "id": "CHK-21",
+          "status": "FAIL",
+          "observed": "Accepted decimal value=\"0.5\""
+        },
+        {
+          "id": "CHK-22",
+          "status": "FAIL",
+          "observed": "max=\"null\", accepted=\"2000000000\""
+        },
+        {
+          "id": "CHK-23",
+          "status": "PASS",
+          "observed": "After typing \"abc\": value=\"\", badInput=false"
+        },
+        {
+          "id": "CHK-24",
+          "status": "PASS",
+          "observed": "ArrowUp->\"2\", ArrowDown->\"1\""
+        },
+        {
+          "id": "CHK-25",
+          "status": "PASS",
+          "observed": "qtyInput width=80px"
+        },
+        {
+          "id": "CHK-26",
+          "status": "PASS",
+          "observed": "Label=\"Số lượng:\""
+        },
+        {
+          "id": "CHK-27",
+          "status": "FAIL",
+          "observed": "HTML <b> rendered in DOM=true"
+        },
+        {
+          "id": "CHK-28",
+          "status": "PASS",
+          "observed": "Logo returned to http://localhost:5173/"
+        },
+        {
+          "id": "CHK-29",
+          "status": "FAIL",
+          "observed": "Pagination present=false (all 5 items rendered)"
+        },
+        {
+          "id": "CHK-30",
+          "status": "FAIL",
+          "observed": "Cart link=\"Giỏ hàng\", badge=false"
+        },
+        {
+          "id": "CHK-31",
+          "status": "FAIL",
+          "observed": "Button text=\"Thoát\""
+        },
+        {
+          "id": "CHK-32",
+          "status": "FAIL",
+          "observed": "Navbar active highlight=false"
+        },
+        {
+          "id": "CHK-33",
+          "status": "PASS",
+          "observed": "Navigated to http://localhost:5173/product/1"
+        },
+        {
+          "id": "CHK-34",
+          "status": "FAIL",
+          "observed": "Breadcrumbs present=false"
+        },
+        {
+          "id": "CHK-35",
+          "status": "PASS",
+          "observed": "Profile link navigated to http://localhost:5173/profile"
+        },
+        {
+          "id": "CHK-36",
+          "status": "PASS",
+          "observed": "Auth links=[\"Giỏ hàng\",\"Đăng nhập\",\"Đăng ký\"]"
+        },
+        {
+          "id": "CHK-37",
+          "status": "PASS",
+          "observed": "Nav hover underline class=true"
+        },
+        {
+          "id": "CHK-38",
+          "status": "PASS",
+          "observed": "SPA marker preserved=true"
+        },
+        {
+          "id": "CHK-39",
+          "status": "FAIL",
+          "observed": "Header username HTML rendered=true"
+        },
+        {
+          "id": "CHK-40",
+          "status": "FAIL",
+          "observed": "After 1st click text=\"Thêm vào giỏ hàng\""
+        },
+        {
+          "id": "CHK-41",
+          "status": "FAIL",
+          "observed": "Cart rows after logout without F5=1"
+        },
+        {
+          "id": "CHK-42",
+          "status": "FAIL",
+          "observed": "2nd click=\"Đã thêm\", after 3 clicks cart rows=1 (clicks 1 & 3 swallowed)"
+        },
+        {
+          "id": "CHK-43",
+          "status": "FAIL",
+          "observed": "Home add-to-cart visual feedback=false"
+        },
+        {
+          "id": "CHK-44",
+          "status": "FAIL",
+          "observed": "Loading indicator during API fetch=false"
+        },
+        {
+          "id": "CHK-45",
+          "status": "PASS",
+          "observed": "ProductDetail loading text visible=true"
+        },
+        {
+          "id": "CHK-46",
+          "status": "FAIL",
+          "observed": "Empty state message present=false"
+        },
+        {
+          "id": "CHK-47",
+          "status": "FAIL",
+          "observed": "Images with empty alt=5/5"
+        },
+        {
+          "id": "CHK-48",
+          "status": "PASS",
+          "observed": "alt=\"iPhone 15 Pro Max\""
+        },
+        {
+          "id": "CHK-49",
+          "status": "PASS",
+          "observed": "Logout button style=\"bg-red-500 px-3 py-1 rounded\""
+        }
+      ],
+      "screenshots": [
+        {
+          "id": "CHK-01",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-01.png"
+        },
+        {
+          "id": "CHK-03",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-03.png"
+        },
+        {
+          "id": "CHK-07",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-07.png"
+        },
+        {
+          "id": "CHK-13",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-13.png"
+        },
+        {
+          "id": "CHK-14",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-14.png"
+        },
+        {
+          "id": "CHK-20",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-20.png"
+        },
+        {
+          "id": "CHK-21",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-21.png"
+        },
+        {
+          "id": "CHK-22",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-22.png"
+        },
+        {
+          "id": "CHK-23",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-23.png"
+        },
+        {
+          "id": "CHK-27",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-27.png"
+        },
+        {
+          "id": "CHK-29",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-29.png"
+        },
+        {
+          "id": "CHK-30",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-30.png"
+        },
+        {
+          "id": "CHK-31",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-31.png"
+        },
+        {
+          "id": "CHK-32",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-32.png"
+        },
+        {
+          "id": "CHK-34",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-34.png"
+        },
+        {
+          "id": "CHK-39",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-39.png"
+        },
+        {
+          "id": "CHK-40",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-40.png"
+        },
+        {
+          "id": "CHK-41",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-41.png"
+        },
+        {
+          "id": "CHK-42",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-42.png"
+        },
+        {
+          "id": "CHK-43",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-43.png"
+        },
+        {
+          "id": "CHK-44",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-44.png"
+        },
+        {
+          "id": "CHK-46",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-46.png"
+        },
+        {
+          "id": "CHK-47",
+          "file": "report\\screenshots\\task3\\chrome\\CHK-47.png"
+        }
+      ]
+    },
+    "firefox": {
+      "checklistAudit": [
+        {
+          "id": "CHK-01",
+          "status": "FAIL",
+          "observed": "Found 2 <h1> tags: [\"Danh sách sản phẩm\",\"Hiển thị 5 sản phẩm\"]"
+        },
+        {
+          "id": "CHK-02",
+          "status": "PASS",
+          "observed": "ProductDetail <h1> count=1"
+        },
+        {
+          "id": "CHK-03",
+          "status": "FAIL",
+          "observed": "Sample price: 30,000,000 VND"
+        },
+        {
+          "id": "CHK-04",
+          "status": "PASS",
+          "observed": "Price=\"30,000,000 ₫\", color=rgb(220, 38, 38)"
+        },
+        {
+          "id": "CHK-05",
+          "status": "PASS",
+          "observed": "Row1 sameTop=true, sameHeight=true"
+        },
+        {
+          "id": "CHK-06",
+          "status": "PASS",
+          "observed": "Action buttons aligned horizontally: true"
+        },
+        {
+          "id": "CHK-07",
+          "status": "FAIL",
+          "observed": "Home btn=rgb(37, 99, 235) vs Detail btn=rgb(22, 163, 74)"
+        },
+        {
+          "id": "CHK-08",
+          "status": "PASS",
+          "observed": "h1=30px > cardTitle=20px"
+        },
+        {
+          "id": "CHK-09",
+          "status": "PASS",
+          "observed": "horizontalOverflow=false"
+        },
+        {
+          "id": "CHK-10",
+          "status": "PASS",
+          "observed": "Footer=\"© 2026 EShop SUT. Dành cho mục đích kiểm thử.\", bg=rgb(31, 41, 55)"
+        },
+        {
+          "id": "CHK-11",
+          "status": "PASS",
+          "observed": "Cols desktop=3, tablet=3, mobile=1"
+        },
+        {
+          "id": "CHK-12",
+          "status": "PASS",
+          "observed": "Header paddingLeft=16px"
+        },
+        {
+          "id": "CHK-13",
+          "status": "FAIL",
+          "observed": "bg before=rgb(239, 68, 68), hover=rgb(239, 68, 68)"
+        },
+        {
+          "id": "CHK-14",
+          "status": "FAIL",
+          "observed": "Raw error text=\"Database ErrorSQLITE_ERROR: unrecognized token: \"'\"\""
+        },
+        {
+          "id": "CHK-15",
+          "status": "PASS",
+          "observed": "Placeholder=\"Tìm kiếm...\""
+        },
+        {
+          "id": "CHK-16",
+          "status": "PASS",
+          "observed": "Filtered count=1/5"
+        },
+        {
+          "id": "CHK-17",
+          "status": "PASS",
+          "observed": "Enter filtered count=1"
+        },
+        {
+          "id": "CHK-18",
+          "status": "PASS",
+          "observed": "Reset count=5/5"
+        },
+        {
+          "id": "CHK-19",
+          "status": "PASS",
+          "observed": "Default qty=\"1\""
+        },
+        {
+          "id": "CHK-20",
+          "status": "FAIL",
+          "observed": "min=\"null\" (accepts negative -5)"
+        },
+        {
+          "id": "CHK-21",
+          "status": "FAIL",
+          "observed": "Accepted decimal value=\"0.5\""
+        },
+        {
+          "id": "CHK-22",
+          "status": "FAIL",
+          "observed": "max=\"null\", accepted=\"2000000000\""
+        },
+        {
+          "id": "CHK-23",
+          "status": "FAIL",
+          "observed": "After typing \"abc\": value=\"\", badInput=true"
+        },
+        {
+          "id": "CHK-24",
+          "status": "PASS",
+          "observed": "ArrowUp->\"2\", ArrowDown->\"1\""
+        },
+        {
+          "id": "CHK-25",
+          "status": "PASS",
+          "observed": "qtyInput width=80px"
+        },
+        {
+          "id": "CHK-26",
+          "status": "PASS",
+          "observed": "Label=\"Số lượng:\""
+        },
+        {
+          "id": "CHK-27",
+          "status": "FAIL",
+          "observed": "HTML <b> rendered in DOM=true"
+        },
+        {
+          "id": "CHK-28",
+          "status": "PASS",
+          "observed": "Logo returned to http://localhost:5173/"
+        },
+        {
+          "id": "CHK-29",
+          "status": "FAIL",
+          "observed": "Pagination present=false (all 5 items rendered)"
+        },
+        {
+          "id": "CHK-30",
+          "status": "FAIL",
+          "observed": "Cart link=\"Giỏ hàng\", badge=false"
+        },
+        {
+          "id": "CHK-31",
+          "status": "FAIL",
+          "observed": "Button text=\"Thoát\""
+        },
+        {
+          "id": "CHK-32",
+          "status": "FAIL",
+          "observed": "Navbar active highlight=false"
+        },
+        {
+          "id": "CHK-33",
+          "status": "PASS",
+          "observed": "Navigated to http://localhost:5173/product/1"
+        },
+        {
+          "id": "CHK-34",
+          "status": "FAIL",
+          "observed": "Breadcrumbs present=false"
+        },
+        {
+          "id": "CHK-35",
+          "status": "PASS",
+          "observed": "Profile link navigated to http://localhost:5173/profile"
+        },
+        {
+          "id": "CHK-36",
+          "status": "PASS",
+          "observed": "Auth links=[\"Giỏ hàng\",\"Đăng nhập\",\"Đăng ký\"]"
+        },
+        {
+          "id": "CHK-37",
+          "status": "PASS",
+          "observed": "Nav hover underline class=true"
+        },
+        {
+          "id": "CHK-38",
+          "status": "PASS",
+          "observed": "SPA marker preserved=true"
+        },
+        {
+          "id": "CHK-39",
+          "status": "FAIL",
+          "observed": "Header username HTML rendered=true"
+        },
+        {
+          "id": "CHK-40",
+          "status": "FAIL",
+          "observed": "After 1st click text=\"Thêm vào giỏ hàng\""
+        },
+        {
+          "id": "CHK-41",
+          "status": "FAIL",
+          "observed": "Cart rows after logout without F5=1"
+        },
+        {
+          "id": "CHK-42",
+          "status": "FAIL",
+          "observed": "2nd click=\"Đã thêm\", after 3 clicks cart rows=1 (clicks 1 & 3 swallowed)"
+        },
+        {
+          "id": "CHK-43",
+          "status": "FAIL",
+          "observed": "Home add-to-cart visual feedback=false"
+        },
+        {
+          "id": "CHK-44",
+          "status": "FAIL",
+          "observed": "Loading indicator during API fetch=false"
+        },
+        {
+          "id": "CHK-45",
+          "status": "PASS",
+          "observed": "ProductDetail loading text visible=true"
+        },
+        {
+          "id": "CHK-46",
+          "status": "FAIL",
+          "observed": "Empty state message present=false"
+        },
+        {
+          "id": "CHK-47",
+          "status": "FAIL",
+          "observed": "Images with empty alt=5/5"
+        },
+        {
+          "id": "CHK-48",
+          "status": "PASS",
+          "observed": "alt=\"iPhone 15 Pro Max\""
+        },
+        {
+          "id": "CHK-49",
+          "status": "PASS",
+          "observed": "Logout button style=\"bg-red-500 px-3 py-1 rounded\""
+        }
+      ],
+      "screenshots": [
+        {
+          "id": "CHK-01",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-01.png"
+        },
+        {
+          "id": "CHK-03",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-03.png"
+        },
+        {
+          "id": "CHK-07",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-07.png"
+        },
+        {
+          "id": "CHK-13",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-13.png"
+        },
+        {
+          "id": "CHK-14",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-14.png"
+        },
+        {
+          "id": "CHK-20",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-20.png"
+        },
+        {
+          "id": "CHK-21",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-21.png"
+        },
+        {
+          "id": "CHK-22",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-22.png"
+        },
+        {
+          "id": "CHK-23",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-23.png"
+        },
+        {
+          "id": "CHK-27",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-27.png"
+        },
+        {
+          "id": "CHK-29",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-29.png"
+        },
+        {
+          "id": "CHK-30",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-30.png"
+        },
+        {
+          "id": "CHK-31",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-31.png"
+        },
+        {
+          "id": "CHK-32",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-32.png"
+        },
+        {
+          "id": "CHK-34",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-34.png"
+        },
+        {
+          "id": "CHK-39",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-39.png"
+        },
+        {
+          "id": "CHK-40",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-40.png"
+        },
+        {
+          "id": "CHK-41",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-41.png"
+        },
+        {
+          "id": "CHK-42",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-42.png"
+        },
+        {
+          "id": "CHK-43",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-43.png"
+        },
+        {
+          "id": "CHK-44",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-44.png"
+        },
+        {
+          "id": "CHK-46",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-46.png"
+        },
+        {
+          "id": "CHK-47",
+          "file": "report\\screenshots\\task3\\firefox\\CHK-47.png"
+        }
+      ]
+    },
+    "safari": {
+      "checklistAudit": [
+        {
+          "id": "CHK-01",
+          "status": "FAIL",
+          "observed": "Found 2 <h1> tags: [\"Danh sách sản phẩm\",\"Hiển thị 5 sản phẩm\"]"
+        },
+        {
+          "id": "CHK-02",
+          "status": "PASS",
+          "observed": "ProductDetail <h1> count=1"
+        },
+        {
+          "id": "CHK-03",
+          "status": "FAIL",
+          "observed": "Sample price: 30,000,000 VND"
+        },
+        {
+          "id": "CHK-04",
+          "status": "PASS",
+          "observed": "Price=\"30,000,000 ₫\", color=rgb(220, 38, 38)"
+        },
+        {
+          "id": "CHK-05",
+          "status": "PASS",
+          "observed": "Row1 sameTop=true, sameHeight=true"
+        },
+        {
+          "id": "CHK-06",
+          "status": "PASS",
+          "observed": "Action buttons aligned horizontally: true"
+        },
+        {
+          "id": "CHK-07",
+          "status": "FAIL",
+          "observed": "Home btn=rgb(37, 99, 235) vs Detail btn=rgb(22, 163, 74)"
+        },
+        {
+          "id": "CHK-08",
+          "status": "PASS",
+          "observed": "h1=30px > cardTitle=20px"
+        },
+        {
+          "id": "CHK-09",
+          "status": "PASS",
+          "observed": "horizontalOverflow=false"
+        },
+        {
+          "id": "CHK-10",
+          "status": "PASS",
+          "observed": "Footer=\"© 2026 EShop SUT. Dành cho mục đích kiểm thử.\", bg=rgb(31, 41, 55)"
+        },
+        {
+          "id": "CHK-11",
+          "status": "PASS",
+          "observed": "Cols desktop=3, tablet=3, mobile=1"
+        },
+        {
+          "id": "CHK-12",
+          "status": "PASS",
+          "observed": "Header paddingLeft=16px"
+        },
+        {
+          "id": "CHK-13",
+          "status": "FAIL",
+          "observed": "bg before=rgb(239, 68, 68), hover=rgb(239, 68, 68)"
+        },
+        {
+          "id": "CHK-14",
+          "status": "FAIL",
+          "observed": "Raw error text=\"Database ErrorSQLITE_ERROR: unrecognized token: \"'\"\""
+        },
+        {
+          "id": "CHK-15",
+          "status": "PASS",
+          "observed": "Placeholder=\"Tìm kiếm...\""
+        },
+        {
+          "id": "CHK-16",
+          "status": "PASS",
+          "observed": "Filtered count=1/5"
+        },
+        {
+          "id": "CHK-17",
+          "status": "PASS",
+          "observed": "Enter filtered count=1"
+        },
+        {
+          "id": "CHK-18",
+          "status": "PASS",
+          "observed": "Reset count=5/5"
+        },
+        {
+          "id": "CHK-19",
+          "status": "PASS",
+          "observed": "Default qty=\"1\""
+        },
+        {
+          "id": "CHK-20",
+          "status": "FAIL",
+          "observed": "min=\"null\" (accepts negative -5)"
+        },
+        {
+          "id": "CHK-21",
+          "status": "FAIL",
+          "observed": "Accepted decimal value=\"0.5\""
+        },
+        {
+          "id": "CHK-22",
+          "status": "FAIL",
+          "observed": "max=\"null\", accepted=\"2000000000\""
+        },
+        {
+          "id": "CHK-23",
+          "status": "PASS",
+          "observed": "After typing \"abc\": value=\"\", badInput=false"
+        },
+        {
+          "id": "CHK-24",
+          "status": "PASS",
+          "observed": "ArrowUp->\"2\", ArrowDown->\"1\""
+        },
+        {
+          "id": "CHK-25",
+          "status": "PASS",
+          "observed": "qtyInput width=80px"
+        },
+        {
+          "id": "CHK-26",
+          "status": "PASS",
+          "observed": "Label=\"Số lượng:\""
+        },
+        {
+          "id": "CHK-27",
+          "status": "FAIL",
+          "observed": "HTML <b> rendered in DOM=true"
+        },
+        {
+          "id": "CHK-28",
+          "status": "PASS",
+          "observed": "Logo returned to http://localhost:5173/"
+        },
+        {
+          "id": "CHK-29",
+          "status": "FAIL",
+          "observed": "Pagination present=false (all 5 items rendered)"
+        },
+        {
+          "id": "CHK-30",
+          "status": "FAIL",
+          "observed": "Cart link=\"Giỏ hàng\", badge=false"
+        },
+        {
+          "id": "CHK-31",
+          "status": "FAIL",
+          "observed": "Button text=\"Thoát\""
+        },
+        {
+          "id": "CHK-32",
+          "status": "FAIL",
+          "observed": "Navbar active highlight=false"
+        },
+        {
+          "id": "CHK-33",
+          "status": "PASS",
+          "observed": "Navigated to http://localhost:5173/product/1"
+        },
+        {
+          "id": "CHK-34",
+          "status": "FAIL",
+          "observed": "Breadcrumbs present=false"
+        },
+        {
+          "id": "CHK-35",
+          "status": "PASS",
+          "observed": "Profile link navigated to http://localhost:5173/profile"
+        },
+        {
+          "id": "CHK-36",
+          "status": "PASS",
+          "observed": "Auth links=[\"Giỏ hàng\",\"Đăng nhập\",\"Đăng ký\"]"
+        },
+        {
+          "id": "CHK-37",
+          "status": "PASS",
+          "observed": "Nav hover underline class=true"
+        },
+        {
+          "id": "CHK-38",
+          "status": "PASS",
+          "observed": "SPA marker preserved=true"
+        },
+        {
+          "id": "CHK-39",
+          "status": "FAIL",
+          "observed": "Header username HTML rendered=true"
+        },
+        {
+          "id": "CHK-40",
+          "status": "FAIL",
+          "observed": "After 1st click text=\"Thêm vào giỏ hàng\""
+        },
+        {
+          "id": "CHK-41",
+          "status": "FAIL",
+          "observed": "Cart rows after logout without F5=1"
+        },
+        {
+          "id": "CHK-42",
+          "status": "FAIL",
+          "observed": "2nd click=\"Đã thêm\", after 3 clicks cart rows=1 (clicks 1 & 3 swallowed)"
+        },
+        {
+          "id": "CHK-43",
+          "status": "FAIL",
+          "observed": "Home add-to-cart visual feedback=false"
+        },
+        {
+          "id": "CHK-44",
+          "status": "FAIL",
+          "observed": "Loading indicator during API fetch=false"
+        },
+        {
+          "id": "CHK-45",
+          "status": "PASS",
+          "observed": "ProductDetail loading text visible=true"
+        },
+        {
+          "id": "CHK-46",
+          "status": "FAIL",
+          "observed": "Empty state message present=false"
+        },
+        {
+          "id": "CHK-47",
+          "status": "FAIL",
+          "observed": "Images with empty alt=5/5"
+        },
+        {
+          "id": "CHK-48",
+          "status": "PASS",
+          "observed": "alt=\"iPhone 15 Pro Max\""
+        },
+        {
+          "id": "CHK-49",
+          "status": "PASS",
+          "observed": "Logout button style=\"bg-red-500 px-3 py-1 rounded\""
+        }
+      ],
+      "screenshots": [
+        {
+          "id": "CHK-01",
+          "file": "report\\screenshots\\task3\\safari\\CHK-01.png"
+        },
+        {
+          "id": "CHK-03",
+          "file": "report\\screenshots\\task3\\safari\\CHK-03.png"
+        },
+        {
+          "id": "CHK-07",
+          "file": "report\\screenshots\\task3\\safari\\CHK-07.png"
+        },
+        {
+          "id": "CHK-13",
+          "file": "report\\screenshots\\task3\\safari\\CHK-13.png"
+        },
+        {
+          "id": "CHK-14",
+          "file": "report\\screenshots\\task3\\safari\\CHK-14.png"
+        },
+        {
+          "id": "CHK-20",
+          "file": "report\\screenshots\\task3\\safari\\CHK-20.png"
+        },
+        {
+          "id": "CHK-21",
+          "file": "report\\screenshots\\task3\\safari\\CHK-21.png"
+        },
+        {
+          "id": "CHK-22",
+          "file": "report\\screenshots\\task3\\safari\\CHK-22.png"
+        },
+        {
+          "id": "CHK-23",
+          "file": "report\\screenshots\\task3\\safari\\CHK-23.png"
+        },
+        {
+          "id": "CHK-27",
+          "file": "report\\screenshots\\task3\\safari\\CHK-27.png"
+        },
+        {
+          "id": "CHK-29",
+          "file": "report\\screenshots\\task3\\safari\\CHK-29.png"
+        },
+        {
+          "id": "CHK-30",
+          "file": "report\\screenshots\\task3\\safari\\CHK-30.png"
+        },
+        {
+          "id": "CHK-31",
+          "file": "report\\screenshots\\task3\\safari\\CHK-31.png"
+        },
+        {
+          "id": "CHK-32",
+          "file": "report\\screenshots\\task3\\safari\\CHK-32.png"
+        },
+        {
+          "id": "CHK-34",
+          "file": "report\\screenshots\\task3\\safari\\CHK-34.png"
+        },
+        {
+          "id": "CHK-39",
+          "file": "report\\screenshots\\task3\\safari\\CHK-39.png"
+        },
+        {
+          "id": "CHK-40",
+          "file": "report\\screenshots\\task3\\safari\\CHK-40.png"
+        },
+        {
+          "id": "CHK-41",
+          "file": "report\\screenshots\\task3\\safari\\CHK-41.png"
+        },
+        {
+          "id": "CHK-42",
+          "file": "report\\screenshots\\task3\\safari\\CHK-42.png"
+        },
+        {
+          "id": "CHK-43",
+          "file": "report\\screenshots\\task3\\safari\\CHK-43.png"
+        },
+        {
+          "id": "CHK-44",
+          "file": "report\\screenshots\\task3\\safari\\CHK-44.png"
+        },
+        {
+          "id": "CHK-46",
+          "file": "report\\screenshots\\task3\\safari\\CHK-46.png"
+        },
+        {
+          "id": "CHK-47",
+          "file": "report\\screenshots\\task3\\safari\\CHK-47.png"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2026-11-12T12:43:42.891Z"
+}
