@@ -18,7 +18,7 @@
 
 | Mã | Họ tên | Đối tượng / Nền tảng | SĐT *(che 4 số giữa)* | Nhiệm vụ thực tế | Kết quả tác vụ | SEQ (`1–7`) | SUS (`/100`) | Bằng chứng |
 | :-: | :--- | :--- | :---: | :--- | :--- | :---: | :---: | :--- |
-| **P1** | Hà Anh Tuấn | Sinh viên IT năm 4 (VGU) — Ngoài lớp HW03 | `093****045` | Tìm điện thoại iPhone giá 30 triệu $\rightarrow$ Chi tiết $\rightarrow$ Thêm giỏ $\rightarrow$ Xem giỏ | Thành công hoàn toàn *(tự thao tác)* | **6 / 7** | **82.5** *(92.5 nếu hiệu chỉnh Q6)* | [Video P1](https://youtu.be/hSGZJhJrAhA) · [`candidate 1 transcript`](./%5BVietnamese%20(auto-generated)%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) |
+| **P1** | Hà Anh Tuấn | Sinh viên IT năm 4 (VGU) — Ngoài lớp HW03 | `093****045` | Tìm điện thoại iPhone giá 30 triệu $\rightarrow$ Chi tiết $\rightarrow$ Thêm giỏ $\rightarrow$ Xem giỏ | Thành công hoàn toàn *(tự thao tác)* | **6 / 7** | **82.5** *(92.5 nếu hiệu chỉnh Q6)* | [Video P1](https://youtu.be/hSGZJhJrAhA) · [`candidate 1 transcript`](./%5BVietnamese%20%28auto-generated%29%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) |
 | **P2** | Trần Kim Ngân | Sinh viên IT năm 4 (HCMUS) *(chờ xác nhận ngoài lớp)* | `098****128` | Tìm MacBook $\rightarrow$ Chi tiết $\rightarrow$ Thêm giỏ $\rightarrow$ Xem giỏ | Thành công hoàn toàn *(có nhắc bước từ ĐPV)* | **6 / 7** | **92.5** | [Video P2](https://youtu.be/1EfXQpylgmQ) *(YouTube: Dat Thanh)* |
 | **Tổng / TB** | **`n = 2`** | **100% Sinh viên IT năm 4** | **2/2 có SĐT** | **Core Path Flow F2** | **2 / 2 (100%)** | **6.0 / 7** | **87.5 / 100** | — |
 

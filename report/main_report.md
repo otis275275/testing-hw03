@@ -62,7 +62,7 @@ Tài liệu chi tiết tại [`report/task2_phase1_plan_and_instruments.md`](./t
 
 ### 3.2. Giai đoạn 2 — Thu thập Dữ liệu Thực tế (`2 / 7` phiên hoàn chỉnh)
 Biên bản ghi nhận tại [`report/task2_phase2_session_logs.md`](./task2_phase2_session_logs.md):
-- **Đã hoàn thành `P1`:** **Hà Anh Tuấn** (Sinh viên IT năm 4 — VGU, SĐT `093****045`, ngoài lớp HW03) — [Video P1](https://youtu.be/hSGZJhJrAhA) + [`candidate 1 transcript`](./%5BVietnamese%20(auto-generated)%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) | **Kết quả:** Thành công hoàn toàn | **SEQ:** `6/7` | **SUS:** `82.5/100` *(Grade A — có ghi chú kiểm tra Q6, Q9)*.
+- **Đã hoàn thành `P1`:** **Hà Anh Tuấn** (Sinh viên IT năm 4 — VGU, SĐT `093****045`, ngoài lớp HW03) — [Video P1](https://youtu.be/hSGZJhJrAhA) + [`candidate 1 transcript`](./%5BVietnamese%20%28auto-generated%29%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) | **Kết quả:** Thành công hoàn toàn | **SEQ:** `6/7` | **SUS:** `82.5/100` *(Grade A — có ghi chú kiểm tra Q6, Q9)*.
 - **Đã hoàn thành `P2`:** **Trần Kim Ngân** (Sinh viên IT năm 4 — HCMUS, SĐT `098****128`, chờ xác nhận ngoài lớp HW03) — [Video P2](https://youtu.be/1EfXQpylgmQ) | **Kết quả:** Thành công hoàn toàn *(có nhắc bước từ ĐPV)* | **SEQ:** `6/7` | **SUS:** `92.5/100` *(Grade A — chủ động trừ 1 điểm ở Q5 vì thiếu thông báo)*.
 - **Đã ghi nhận định danh `P3`:** **Đinh Ngọc Khánh** (Sinh viên IT — HCMUT, ngoài lớp HW03; chưa thực hiện phỏng vấn). **Pilot** và **`P4`–`P7`** chưa thu thập do giới hạn thời gian.
 
@@ -101,7 +101,7 @@ Hai Agent Skills đã được đóng gói đầy đủ tại [`skills/`](../ski
 1. **`gui-testing`** ([`skills/gui-testing/SKILL.md`](../skills/gui-testing/SKILL.md)): Chuẩn hóa công thức viết checklist, phân biệt GUI vs Functional vs Usability, 4 khía cạnh IA-01..IA-04 và quy trình phản biện lỗi AI bỏ sót.
 2. **`usability-testing`** ([`skills/usability-testing/SKILL.md`](../skills/usability-testing/SKILL.md)): Chuẩn hóa ISO 9241-11, quy trình 8 bước, kịch bản Goal-Oriented, Think-Aloud, công thức SUS/UEQ-S và ánh xạ 10 Heuristic của Jakob Nielsen.
 
-- **Video Demo YouTube (sử dụng Agent Skills):** `[Chờ bạn điền link YouTube demo trước khi nộp]`
+- **Video Demo YouTube (sử dụng Agent Skills):** [https://youtu.be/MBv7Ssz-0uY](https://youtu.be/MBv7Ssz-0uY)
 
 ---
 

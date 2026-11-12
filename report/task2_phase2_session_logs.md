@@ -16,7 +16,7 @@
 | Vai trò | Họ và tên thật | Nghề nghiệp / Đối tượng | Ngoài lớp HW03? | Ngoài IT? | SĐT / Zalo / Email *(che 4 số giữa)* | Ngày giờ thực hiện | Kênh thực hiện | File / Link Video bằng chứng | Trạng thái |
 | :-: | :--- | :--- | :---: | :---: | :--- | :---: | :---: | :--- | :---: |
 | **Pilot** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
-| **P1** | Hà Anh Tuấn | Sinh viên IT năm 4 (VGU) | ☑ Có | ☐ Không *(IT)* | `093****045` | *(Cần điền)* | Online (YouTube Record) | [Video P1](https://youtu.be/hSGZJhJrAhA) + [`candidate 1 transcript`](./%5BVietnamese%20(auto-generated)%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) | Đã nhập *(chờ ngày giờ & timestamp video)* |
+| **P1** | Hà Anh Tuấn | Sinh viên IT năm 4 (VGU) | ☑ Có | ☐ Không *(IT)* | `093****045` | *(Cần điền)* | Online (YouTube Record) | [Video P1](https://youtu.be/hSGZJhJrAhA) + [`candidate 1 transcript`](./%5BVietnamese%20%28auto-generated%29%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) | Đã nhập *(chờ ngày giờ & timestamp video)* |
 | **P2** | Trần Kim Ngân | Sinh viên IT năm 4 (HCMUS) | ☐ Có *(xác nhận ngoài lớp HW03)* | ☐ Không *(IT)* | `098****128` | *(Cần điền)* | Online (YouTube Record) | [Video P2](https://youtu.be/1EfXQpylgmQ) *(YouTube: Dat Thanh)* | Đã nhập *(chờ ngày giờ, xác nhận ngoài lớp & timestamp)* |
 | **P3** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
 | **P4** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
@@ -68,7 +68,7 @@
 - **Người tham gia:** `Hà Anh Tuấn` | **Nghề nghiệp:** `Sinh viên IT năm 4 (VGU)` | **Ngoài lớp HW03:** `Có (học VGU, ngoài lớp HW03 HCMUS; thuộc ngành IT)`
 - **SĐT/Zalo/Email *(che 4 số giữa)*:** `093****045`
 - **Ngày giờ:** `[Cần bạn bổ sung]` | **Hình thức:** `Online (có quay màn hình & thu âm)`
-- **Bằng chứng quay màn hình + âm thanh:** [https://youtu.be/hSGZJhJrAhA](https://youtu.be/hSGZJhJrAhA) · Transcript: [`candidate 1 [DownSub.com].txt`](./%5BVietnamese%20(auto-generated)%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt)
+- **Bằng chứng quay màn hình + âm thanh:** [https://youtu.be/hSGZJhJrAhA](https://youtu.be/hSGZJhJrAhA) · Transcript: [`candidate 1 [DownSub.com].txt`](./%5BVietnamese%20%28auto-generated%29%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt)
 - **Thời gian hoàn thành (Time on Task):** `[Cần xem lại video để điền mm:ss — file .txt DownSub không có timestamp]`
 - **Kết quả tác vụ:** `Thành công hoàn toàn` *(tìm được iPhone 15 Pro Max giá 30 triệu, vào chi tiết, thêm vào giỏ và vào giỏ hàng kiểm tra)*
 - **Ghi chú bối cảnh kịch bản thực tế:** Ở phiên này, điều phối viên giao nhiệm vụ tìm *"điện thoại iPhone giá 30 triệu"* (khác với kịch bản tai nghe trong Phase 1; chưa test bước tìm từ khóa không có kết quả `"Sony"` và xem Footer).

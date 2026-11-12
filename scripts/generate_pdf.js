@@ -413,10 +413,13 @@ function buildHtmlDocument(bodyHtml, title) {
 
 async function main() {
   const targets = [
+    'assessment.md',
     'report/main_report.md',
     'report/bug_report.md',
     'report/task3_cross_browser.md',
     'report/task2_phase1_plan_and_instruments.md',
+    'report/task2_phase2_session_logs.md',
+    'report/task2_phase3_analysis_and_report.md',
     'report/AI_critique.md',
     'testcase/gui_checklist_m2.md',
     'AI.log.md',

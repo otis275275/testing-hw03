@@ -914,3 +914,75 @@ roi append vao @[c:\Users\Administrator\Desktop\tesstinbg\testing-hw03\AI.log.md
 ```
 - **AI Output**:
 Đã append đầy đủ các lượt trao đổi (Interactions 20–22) vào [`AI.log.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/AI.log.md) và cập nhật lại bản PDF [`AI.log.pdf`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/AI.log.pdf).
+
+---
+
+## Interaction 23
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 21:01:24
+- **User Prompt**:
+```
+roi bay gio dua vao @[c:\Users\Administrator\Desktop\tesstinbg\testing-hw03\report\task2_phase2_session_logs.md] lam tuong tu cho nhung user con lai cho tui, tui khong du thoi gian roi
+Ddinh Ngocj Khanhs sinh vien IT HCMUT
+```
+- **AI Output**:
+- Chỉ ghi nhận thông tin thật cho **P3** trong [`report/task2_phase2_session_logs.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase2_session_logs.md): **Đinh Ngọc Khánh** — `Sinh viên IT (HCMUT)`, ngoài lớp HW03 (`Có`), trạng thái `Chờ SĐT & phiên test`.
+- **Từ chối ngụy tạo dữ liệu** (không sinh SĐT, transcript, nhật ký quan sát hay điểm SEQ/SUS cho `P3`–`P7` và `Pilot`) nhằm tuân thủ nghiêm ngặt quy định Anti-Cheat (§11) và nguyên tắc kiểm thử khả dụng của `skills/usability-testing/SKILL.md`.
+
+---
+
+## Interaction 24
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 21:04:18
+- **User Prompt**:
+```
+Bay gio khong kip tim nhung nguoi con lai roi, hay lam phase 3 cho tui la phan tich voi 2 ung vien tui da phong van, tam thoi khoan xuat pdf voi
+```
+- **AI Output**:
+1. Tạo báo cáo Phase 3 hoàn chỉnh trên mẫu dữ liệu thực tế `n = 2` (`P1`, `P2`) tại [`report/task2_phase3_analysis_and_report.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/task2_phase3_analysis_and_report.md):
+   - Tính toán chi tiết điểm **SEQ TB = `6.0/7`**, **SUS TB = `87.5/100`** (`P1 = 82.5`, `P2 = 92.5` — Grade A), phân tích độ nhạy (`Q6`, `Q7`, `Q9`) và thiên lệch mẫu IT.
+   - Tổng hợp 4 nhóm phát hiện (`UX-01`–`UX-04`), tách biệt **Systemic Design Issues** (`UX-01` thiếu Toast & Cart Badge, `UX-02` đứt gãy định hướng bước tiếp theo) với **Scope/Methodological Notes** (`UX-03` 5 sản phẩm mẫu, `UX-04` sai lệch kịch bản & nhắc bước), xếp hạng ưu tiên `P0`–`P3` và ánh xạ trực tiếp tới GitHub Issues `#2`, `#3`, `#10`, `#11`, `#13`, `#14`, `#16`, `#18`, `#19`.
+2. Cập nhật đồng bộ tiến độ `2/7` phiên & tóm tắt Phase 3 vào [`report/main_report.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/main_report.md) và [`README.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/README.md). Không xuất PDF theo yêu cầu.
+
+---
+
+## Interaction 25
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 21:09:30
+- **User Prompt**:
+```
+oke gio append vao AI log cho tui, check lai toan bo yeu cau nop them con thieu gi k
+[Toàn bộ đề bài HW03 – GUI & Usability §1–§17]
+con thieu Assessment
+```
+- **AI Output**:
+1. Cập nhật đầy đủ **Interactions 23–25** vào [`AI.log.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/AI.log.md).
+2. Hoàn thiện bảng **Self-Assessment Table (§15)** trong [`README.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/README.md) theo hiện trạng thực tế (`Task 1: 29/30`, `Task 2: 25/40`, `Task 3: 19/20`, `Task 4: 6/10`, `Total: 79/100`), kèm hướng dẫn cập nhật nếu bổ sung video demo Task 4.
+3. Đối chiếu chi tiết toàn bộ hạng mục nộp bài (§6–§17) và liệt kê chính xác những điểm còn thiếu / cần hoàn tất trước khi nén file `.zip`.
+
+---
+
+## Interaction 26
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 21:11:58
+- **User Prompt**:
+```
+soan ra file assenment rieng, khong co de vao readme
+```
+- **AI Output**:
+- Tạo file độc lập [`assessment.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/assessment.md) chứa bảng **Self-Assessment (§15)** và giải trình chi tiết từng tiêu chí.
+- Xóa bảng Self-Assessment khỏi [`README.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/README.md), chỉ giữ lại Test Summary Report (§14), danh mục tài liệu (kèm link trỏ tới `assessment.md`) và hướng dẫn chạy script.
+
+---
+
+## Interaction 27
+- **Model**: Gemini 3.8 Flash
+- **Thời gian**: 2026-11-12 21:21:00
+- **User Prompt**:
+```
+https://youtu.be/MBv7Ssz-0uY
+day la link vid agent skill demo Link Video Demo YouTube (Task 4)
+```
+- **AI Output**:
+- Gắn link Video Demo YouTube Task 4 (`https://youtu.be/MBv7Ssz-0uY`) vào [`report/main_report.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/report/main_report.md) và [`README.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/README.md).
+- Cập nhật điểm tự đánh giá mục **4. Agent Skills** trong [`assessment.md`](file:///c:/Users/Administrator/Desktop/tesstinbg/testing-hw03/assessment.md) lên **`9 / 10`**, nâng tổng điểm **Self-Assessed Grade** lên **`82 / 100`** (`23120228_HW03_AI_GUIUsability_082.zip`).
