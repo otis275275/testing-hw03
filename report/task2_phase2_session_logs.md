@@ -18,8 +18,8 @@
 | **Pilot** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
 | **P1** | Hà Anh Tuấn | Sinh viên IT năm 4 (VGU) | ☑ Có | ☐ Không *(IT)* | `093****045` | `2026-11-12 20:30` | Online (YouTube Record) | [Video P1](https://youtu.be/hSGZJhJrAhA) + [`candidate 1 transcript`](./%5BVietnamese%20%28auto-generated%29%5D%20Software%20Testing%20homework%203%20-%20candidate%201%20%5BDownSub.com%5D.txt) | Hoàn thành (`00:37` tác vụ / `07:11` video) |
 | **P2** | Trần Kim Ngân | Sinh viên IT năm 4 (HCMUS) | ☐ Có *(xác nhận ngoài lớp HW03)* | ☐ Không *(IT)* | `098****128` | `2026-11-12 21:00` | Online (YouTube Record) | [Video P2](https://youtu.be/1EfXQpylgmQ) *(YouTube: Dat Thanh)* | Hoàn thành (`00:56` tác vụ / `04:50` video; chờ xác nhận ngoài lớp) |
-| **P3** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
-| **P4** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
+| **P3** | Đinh Ngọc Khánh | Sinh viên IT năm 4 (HCMUT) | ☑ Có | ☐ Không *(IT)* | `089****207` | `2026-11-12 21:15` | Trực tiếp / Meet | Không có *(từ chối ghi hình)* | Chờ Time on Task & kết quả SEQ/SUS thật |
+| **P4** | Lâm Mỹ Phương | Sinh viên IT năm 4 (HCMUT) | ☑ Có | ☐ Không *(IT)* | `094****740` | `2026-11-12 21:30` | Trực tiếp / Meet | Không có *(từ chối ghi hình)* | Chờ Time on Task & kết quả SEQ/SUS thật |
 | **P5** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
 | **P6** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
 | **P7** | | | ☐ Có | ☐ Có / ☐ Không | | `YYYY-MM-DD HH:mm` | Trực tiếp / Meet | | Chưa chạy |
@@ -143,10 +143,10 @@
 
 ## 5. Biên bản Phiên P3
 
-- **Người tham gia:** `[Họ tên]` | **Nghề nghiệp:** `[...]` | **Ngoài lớp HW03:** `[Có]`
-- **SĐT/Zalo/Email *(che 4 số giữa)*:** `[09xx***xxx]`
-- **Ngày giờ:** `YYYY-MM-DD HH:mm` | **Hình thức:** `[Trực tiếp / Google Meet]`
-- **Bằng chứng quay màn hình + âm thanh:** `[Tên file video / link]`
+- **Người tham gia:** `Đinh Ngọc Khánh` | **Nghề nghiệp:** `Sinh viên IT năm 4 (HCMUT)` | **Ngoài lớp HW03:** `Có (học HCMUT, ngoài lớp HW03 HCMUS; thuộc ngành IT)`
+- **SĐT/Zalo/Email *(che 4 số giữa)*:** `089****207`
+- **Ngày giờ:** `2026-11-12 21:15` | **Hình thức:** `[Trực tiếp / Google Meet]`
+- **Bằng chứng quay màn hình + âm thanh:** `Không có (người tham gia từ chối ghi hình/thu âm; chỉ ghi chép biên bản)`
 - **Thời gian hoàn thành (Time on Task):** `[mm:ss]`
 - **Kết quả tác vụ:** `[Thành công hoàn toàn / Thành công có trợ giúp / Thất bại]`
 - **Điểm SEQ (1–7):** `[.../7]` | **Điểm SUS:** `[.../100]`
@@ -177,10 +177,10 @@
 
 ## 6. Biên bản Phiên P4
 
-- **Người tham gia:** `[Họ tên]` | **Nghề nghiệp:** `[...]` | **Ngoài lớp HW03:** `[Có]`
-- **SĐT/Zalo/Email *(che 4 số giữa)*:** `[09xx***xxx]`
-- **Ngày giờ:** `YYYY-MM-DD HH:mm` | **Hình thức:** `[Trực tiếp / Google Meet]`
-- **Bằng chứng quay màn hình + âm thanh:** `[Tên file video / link]`
+- **Người tham gia:** `Lâm Mỹ Phương` | **Nghề nghiệp:** `Sinh viên IT năm 4 (HCMUT)` | **Ngoài lớp HW03:** `Có (học HCMUT, ngoài lớp HW03 HCMUS; thuộc ngành IT)`
+- **SĐT/Zalo/Email *(che 4 số giữa)*:** `094****740`
+- **Ngày giờ:** `2026-11-12 21:30` | **Hình thức:** `[Trực tiếp / Google Meet]`
+- **Bằng chứng quay màn hình + âm thanh:** `Không có (người tham gia từ chối ghi hình/thu âm; chỉ ghi chép biên bản)`
 - **Thời gian hoàn thành (Time on Task):** `[mm:ss]`
 - **Kết quả tác vụ:** `[Thành công hoàn toàn / Thành công có trợ giúp / Thất bại]`
 - **Điểm SEQ (1–7):** `[.../7]` | **Điểm SUS:** `[.../100]`

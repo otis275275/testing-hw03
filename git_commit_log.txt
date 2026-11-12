@@ -1,4 +1,85 @@
-﻿commit 24f0d0c73189b4c1f920e24302a15bd7b36651a8 (HEAD -> master)
+﻿commit 1d11faaae5a9b3fa778bc649168f477624dc0f37
+Author: Lê Trung Thành Đạt <23120228@student.hcmus.edu.vn>
+Date:   Thu Nov 12 21:32:52 2026 +0700
+
+    Task 2: Fill verified YouTube timestamps, session datetimes (P1/P2), and resync PDFs
+
+ AI.log.md                                    |  16 ++++++++++++++++
+ AI.log.pdf                                   | Bin 675405 -> 687442 bytes
+ assessment.pdf                               | Bin 160897 -> 160897 bytes
+ report/AI_critique.pdf                       | Bin 82463 -> 82463 bytes
+ report/bug_report.pdf                        | Bin 3103786 -> 3103786 bytes
+ report/main_report.pdf                       | Bin 628265 -> 628265 bytes
+ report/task2_phase1_plan_and_instruments.pdf | Bin 221304 -> 221304 bytes
+ report/task2_phase2_session_logs.md          |  26 +++++++++++++-------------
+ report/task2_phase2_session_logs.pdf         | Bin 347987 -> 364794 bytes
+ report/task2_phase3_analysis_and_report.md   |  10 +++++-----
+ report/task2_phase3_analysis_and_report.pdf  | Bin 323759 -> 326982 bytes
+ report/task3_cross_browser.pdf               | Bin 330918 -> 330918 bytes
+ testcase/gui_checklist_m2.pdf                | Bin 204973 -> 204973 bytes
+ 13 files changed, 34 insertions(+), 18 deletions(-)
+
+commit 1374ba9de0b6a5c9be68eb952be70acb195971b1
+Author: Lê Trung Thành Đạt <23120228@student.hcmus.edu.vn>
+Date:   Thu Nov 12 21:27:37 2026 +0700
+
+    Docs & Submission: Add assessment, Task 2 Phase 3, Task 4 demo video, sync all 10 PDFs, and update AI log
+
+ AI.log.md                                    |  72 +++++++++++++++++++++++++++
+ AI.log.pdf                                   | Bin 623172 -> 675405 bytes
+ README.md                                    |  28 +++--------
+ assessment.md                                |  49 ++++++++++++++++++
+ assessment.pdf                               | Bin 0 -> 160897 bytes
+ report/AI_critique.pdf                       | Bin 82463 -> 82463 bytes
+ report/bug_report.pdf                        | Bin 3103786 -> 3103786 bytes
+ report/main_report.md                        |   4 +-
+ report/main_report.pdf                       | Bin 605183 -> 628265 bytes
+ report/task2_phase1_plan_and_instruments.pdf | Bin 221304 -> 221304 bytes
+ report/task2_phase2_session_logs.md          |   4 +-
+ report/task2_phase2_session_logs.pdf         | Bin 0 -> 347987 bytes
+ report/task2_phase3_analysis_and_report.md   |   2 +-
+ report/task2_phase3_analysis_and_report.pdf  | Bin 0 -> 323759 bytes
+ report/task3_cross_browser.pdf               | Bin 330918 -> 330918 bytes
+ scripts/generate_pdf.js                      |   3 ++
+ testcase/gui_checklist_m2.pdf                | Bin 204973 -> 204973 bytes
+ 17 files changed, 136 insertions(+), 26 deletions(-)
+
+commit 9d162e0b7e6497c4a163b08ddd975d4d459cec77
+Author: Lê Trung Thành Đạt <23120228@student.hcmus.edu.vn>
+Date:   Thu Nov 12 21:05:47 2026 +0700
+
+    2nd
+
+ AI.log.md                                    |  52 +++++++++++++
+ AI.log.pdf                                   | Bin 601261 -> 623172 bytes
+ README.md                                    |   6 +-
+ report/AI_critique.pdf                       | Bin 82463 -> 82463 bytes
+ report/bug_report.pdf                        | Bin 3103786 -> 3103786 bytes
+ report/main_report.md                        |  17 +++--
+ report/main_report.pdf                       | Bin 605183 -> 605183 bytes
+ report/task2_phase1_plan_and_instruments.pdf | Bin 221304 -> 221304 bytes
+ report/task2_phase2_session_logs.md          |  44 ++++++-----
+ report/task2_phase3_analysis_and_report.md   | 108 +++++++++++++++++++++++++++
+ report/task3_cross_browser.pdf               | Bin 330918 -> 330918 bytes
+ testcase/gui_checklist_m2.pdf                | Bin 204973 -> 204973 bytes
+ 12 files changed, 199 insertions(+), 28 deletions(-)
+
+commit 80cf13e3ad2a9f2f2e065be82a7afa36a973cbb4
+Author: Lê Trung Thành Đạt <23120228@student.hcmus.edu.vn>
+Date:   Thu Nov 12 20:50:54 2026 +0700
+
+    2nd
+
+ 2026.HW03.GUI Usability_En.md |  268 ---
+ backend/database.sqlite       |  Bin 36864 -> 36864 bytes
+ git_commit_log.txt            | 4922 +++++++++++++++++++++++++++++++++++++++++
+ report/AI_critique.md         |    1 +
+ report/bug_report.md          |    1 +
+ report/main_report.md         |    1 +
+ scripts/generate_pdf.js       |    1 +
+ 7 files changed, 4926 insertions(+), 268 deletions(-)
+
+commit 24f0d0c73189b4c1f920e24302a15bd7b36651a8
 Author: Lê Trung Thành Đạt <23120228@student.hcmus.edu.vn>
 Date:   Thu Nov 12 20:49:07 2026 +0700
 
@@ -126,7 +207,7 @@ Date:   Thu Nov 12 20:49:07 2026 +0700
  testcase/gui_checklist_m2.xlsx                | Bin 0 -> 14045 bytes
  8 files changed, 823 insertions(+), 30 deletions(-)
 
-commit 590e50b28f06e06731c71365c1887812ee785eed (origin/master, origin/HEAD)
+commit 590e50b28f06e06731c71365c1887812ee785eed
 Author: Otis <ledat02072005@gmail.com>
 Date:   Wed Nov 4 11:40:55 2026 +0700
 
