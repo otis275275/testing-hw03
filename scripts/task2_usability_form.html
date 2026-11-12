@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 2 — Phiếu Điều phối & Ghi chép Usability (Pilot + P1–P7)</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --muted: #64748b;
+      --primary: #2563eb;
+      --primary-soft: #eff6ff;
+      --green: #16a34a;
+      --green-soft: #f0fdf4;
+      --amber: #d97706;
+      --amber-soft: #fffbeb;
+      --red: #dc2626;
+      --red-soft: #fef2f2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 14px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+    }
+    header h1 { font-size: 16px; margin: 0; font-weight: 700; }
+    header .sub { font-size: 12px; color: #94a3b8; }
+    .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    button {
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      padding: 7px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    button:hover { background: #f1f5f9; }
+    button.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+    button.primary:hover { background: #1d4ed8; }
+    button.success { background: var(--green); color: #fff; border-color: var(--green); }
+    button.success:hover { background: #15803d; }
+    button.danger { background: var(--red-soft); color: var(--red); border-color: #fecaca; }
+    button.danger:hover { background: #fee2e2; }
+
+    .container { max-width: 1120px; margin: 20px auto; padding: 0 16px 60px; }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .tab {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .tab.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #cbd5e1;
+      display: inline-block;
+    }
+    .dot.done { background: #22c55e; }
+    .dot.partial { background: #f59e0b; }
+    .tab.active .dot.done { background: #bbf7d0; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+    }
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+
+    label { display: block; font-size: 12px; font-weight: 600; color: #334155; margin-bottom: 4px; }
+    input[type="text"], input[type="datetime-local"], select, textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: inherit;
+      background: #fff;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+    }
+    textarea { min-height: 66px; resize: vertical; }
+
+    .inline-check {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding-top: 22px;
+      font-size: 13px;
+    }
+    .inline-check label { display: flex; align-items: center; gap: 6px; margin: 0; font-weight: 500; cursor: pointer; }
+
+    .script-box {
+      background: var(--primary-soft);
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 13px;
+    }
+    .script-box summary { cursor: pointer; font-weight: 700; color: #1e40af; }
+    .script-box blockquote {
+      margin: 8px 0 0;
+      padding: 8px 12px;
+      background: #fff;
+      border-left: 3px solid var(--primary);
+      border-radius: 6px;
+    }
+
+    .timer-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      background: #f1f5f9;
+      padding: 10px 12px;
+      border-radius: 10px;
+    }
+    .timer-display {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 20px;
+      font-weight: 700;
+      min-width: 74px;
+    }
+
+    .likert-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .likert-btn {
+      flex: 1;
+      min-width: 38px;
+      text-align: center;
+      padding: 7px 6px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: #fff;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .likert-btn.selected {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border: 1px solid var(--border); padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f8fafc; font-weight: 600; color: #334155; }
+    .sus-radios { display: flex; gap: 6px; justify-content: center; }
+    .sus-pill {
+      width: 30px; height: 30px;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: 600;
+      background: #fff;
+    }
+    .sus-pill.selected { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .badge-A { background: var(--green-soft); color: var(--green); }
+    .badge-BC { background: var(--primary-soft); color: var(--primary); }
+    .badge-D { background: var(--amber-soft); color: var(--amber); }
+    .badge-F { background: var(--red-soft); color: var(--red); }
+
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 16px; }
+    .kpi { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+    .kpi .k-label { font-size: 12px; color: var(--muted); font-weight: 600; }
+    .kpi .k-val { font-size: 22px; font-weight: 800; margin-top: 4px; }
+
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0f172a;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      z-index: 50;
+    }
+    .toast.show { opacity: 1; }
+    .hint { font-size: 12px; color: var(--muted); }
+    .row-del { padding: 4px 8px; font-size: 12px; }
+    .mask-btn { padding: 4px 8px; font-size: 11px; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Task 2 — Phiếu Điều phối & Ghi chép Usability (M2: Flow F2)</h1>
+      <div class="sub">Tự động lưu trên trình duyệt (localStorage) · Tính điểm SUS chuẩn · Xuất Markdown / JSON</div>
+    </div>
+    <div class="actions">
+      <button onclick="copyMarkdown()" class="primary">Copy Markdown tất cả</button>
+      <button onclick="downloadMarkdown()" class="success">Tải file .md</button>
+      <button onclick="downloadJSON()">Tải JSON</button>
+      <button onclick="importJSONPrompt()">Nạp JSON</button>
+      <button onclick="resetAll()" class="danger">Xóa toàn bộ</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="tabs" id="tabs"></div>
+    <div id="content"></div>
+  </div>
+
+  <input type="file" id="jsonFileInput" accept=".json" style="display:none" />
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const ROLES = [
+      { id: "Pilot", label: "Pilot (Chạy thử)" },
+      { id: "P1", label: "P1" },
+      { id: "P2", label: "P2" },
+      { id: "P3", label: "P3" },
+      { id: "P4", label: "P4" },
+      { id: "P5", label: "P5" },
+      { id: "P6", label: "P6" },
+      { id: "P7", label: "P7" }
+    ];
+
+    const SUS_QUESTIONS = [
+      { id: "q1", type: "odd", text: "Tôi nghĩ rằng tôi sẽ thích sử dụng trang web này thường xuyên." },
+      { id: "q2", type: "even", text: "Tôi thấy trang web này phức tạp một cách không cần thiết." },
+      { id: "q3", type: "odd", text: "Tôi thấy trang web này dễ sử dụng." },
+      { id: "q4", type: "even", text: "Tôi nghĩ rằng tôi sẽ cần sự hỗ trợ của người am hiểu kỹ thuật để sử dụng được trang web này." },
+      { id: "q5", type: "odd", text: "Tôi thấy các chức năng khác nhau trên trang web này được kết nối với nhau khá tốt." },
+      { id: "q6", type: "even", text: "Tôi thấy có quá nhiều điểm thiếu nhất quán trên trang web này (màu sắc, chữ, cách phản hồi)." },
+      { id: "q7", type: "odd", text: "Tôi hình dung rằng hầu hết mọi người sẽ học cách dùng trang web này rất nhanh." },
+      { id: "q8", type: "even", text: "Tôi thấy trang web này khá rườm rà, bất tiện khi thao tác." },
+      { id: "q9", type: "odd", text: "Tôi cảm thấy rất tự tin khi thao tác trên trang web này." },
+      { id: "q10", type: "even", text: "Tôi cần phải tìm hiểu hoặc thử sai nhiều thứ trước khi dùng trơn tru được trang web này." }
+    ];
+
+    const STORAGE_KEY = "hw03_task2_m2_sessions_v1";
+
+    function createEmptySession(roleId) {
+      return {
+        role: roleId,
+        name: "",
+        occupation: "",
+        outsideClass: true,
+        nonIT: true,
+        contact: "",
+        datetime: "",
+        channel: "Trực tiếp",
+        recording: "",
+        timeOnTask: "",
+        result: "Thành công hoàn toàn",
+        interventionNote: "",
+        seq: null,
+        sus: { q1: null, q2: null, q3: null, q4: null, q5: null, q6: null, q7: null, q8: null, q9: null, q10: null },
+        logs: [
+          { time: "00:00", action: "Bắt đầu xem trang Home", quote: "", friction: "" }
+        ],
+        probes: {
+          clarity: "",
+          errorRecovery: "",
+          speed: "",
+          trust: "",
+          specific: ""
+        },
+        pilotAdjustments: ""
+      };
+    }
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          const merged = {};
+          ROLES.forEach(r => {
+            merged[r.id] = Object.assign(createEmptySession(r.id), parsed[r.id] || {});
+          });
+          return merged;
+        }
+      } catch (e) {}
+      const init = {};
+      ROLES.forEach(r => { init[r.id] = createEmptySession(r.id); });
+      return init;
+    }
+
+    let state = loadState();
+    let activeTab = "P1";
+
+    // Stopwatch state (not persisted)
+    let timerInterval = null;
+    let timerSeconds = 0;
+    let timerRunning = false;
+
+    function saveState() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      renderTabs();
+    }
+
+    function showToast(msg) {
+      const el = document.getElementById("toast");
+      el.textContent = msg;
+      el.classList.add("show");
+      setTimeout(() => el.classList.remove("show"), 2200);
+    }
+
+    function calcSUS(sus) {
+      let answered = 0;
+      let rawSum = 0;
+      SUS_QUESTIONS.forEach(q => {
+        const val = sus[q.id];
+        if (val >= 1 && val <= 5) {
+          answered++;
+          rawSum += (q.type === "odd") ? (val - 1) : (5 - val);
+        }
+      });
+      if (answered < 10) return { answered, score: null, rawSum, grade: "Chưa đủ 10 câu" };
+      const score = rawSum * 2.5;
+      let grade = "Grade F (< 51.0)";
+      let cls = "badge-F";
+      if (score > 80.3) { grade = "Grade A (> 80.3)"; cls = "badge-A"; }
+      else if (score >= 68.0) { grade = "Grade B/C (68.0–80.3)"; cls = "badge-BC"; }
+      else if (score >= 51.0) { grade = "Grade D (51.0–67.9)"; cls = "badge-D"; }
+      return { answered, score, rawSum, grade, cls };
+    }
+
+    function getSessionStatus(s) {
+      const susInfo = calcSUS(s.sus);
+      if (s.name.trim() && s.contact.trim() && s.seq && susInfo.score !== null) return "done";
+      if (s.name.trim() || s.contact.trim() || s.seq || susInfo.answered > 0 || s.logs.length > 1) return "partial";
+      return "empty";
+    }
+
+    function maskMiddle4(val) {
+      const s = (val || "").trim();
+      if (!s) return "";
+      if (/^\d{9,11}$/.test(s)) {
+        const mid = Math.floor((s.length - 4) / 2);
+        return s.slice(0, mid) + "****" + s.slice(mid + 4);
+      }
+      if (s.includes("@")) {
+        const [local, domain] = s.split("@");
+        if (local.length <= 4) return local[0] + "***@" + domain;
+        const keep = Math.max(1, Math.floor((local.length - 4) / 2));
+        return local.slice(0, keep) + "****" + local.slice(keep + 4) + "@" + domain;
+      }
+      return s;
+    }
+
+    function formatMMSS(sec) {
+      const m = String(Math.floor(sec / 60)).padStart(2, "0");
+      const s = String(sec % 60).padStart(2, "0");
+      return `${m}:${s}`;
+    }
+
+    function parseMMSS(str) {
+      const m = /^(\d+):(\d{1,2})$/.exec((str || "").trim());
+      if (!m) return null;
+      return parseInt(m[1], 10) * 60 + parseInt(m[2], 10);
+    }
+
+    function renderTabs() {
+      const tabsEl = document.getElementById("tabs");
+      let html = ROLES.map(r => {
+        const st = getSessionStatus(state[r.id]);
+        const dotCls = st === "done" ? "dot done" : (st === "partial" ? "dot partial" : "dot");
+        return `<div class="tab ${activeTab === r.id ? "active" : ""}" onclick="switchTab('${r.id}')">
+          <span class="${dotCls}"></span> ${r.label}
+        </div>`;
+      }).join("");
+      html += `<div class="tab ${activeTab === "SUMMARY" ? "active" : ""}" onclick="switchTab('SUMMARY')">📊 Tổng hợp (P1–P7)</div>`;
+      tabsEl.innerHTML = html;
+    }
+
+    function switchTab(id) {
+      activeTab = id;
+      renderTabs();
+      renderContent();
+    }
+
+    function renderSummary() {
+      const official = ["P1", "P2", "P3", "P4", "P5", "P6", "P7"].map(id => state[id]);
+      const completedParticipants = official.filter(s => getSessionStatus(s) === "done");
+      const susScores = official.map(s => calcSUS(s.sus).score).filter(v => v !== null);
+      const seqScores = official.map(s => s.seq).filter(v => v !== null);
+      const times = official.map(s => parseMMSS(s.timeOnTask)).filter(v => v !== null);
+
+      const avgSUS = susScores.length ? (susScores.reduce((a, b) => a + b, 0) / susScores.length).toFixed(1) : "—";
+      const avgSEQ = seqScores.length ? (seqScores.reduce((a, b) => a + b, 0) / seqScores.length).toFixed(2) : "—";
+      const avgTime = times.length ? formatMMSS(Math.round(times.reduce((a, b) => a + b, 0) / times.length)) : "—";
+      const passCount = official.filter(s => s.name && s.result !== "Thất bại").length;
+      const enteredCount = official.filter(s => s.name.trim()).length;
+
+      return `
+        <div class="kpi-grid">
+          <div class="kpi"><div class="k-label">Phiên P1–P7 đã hoàn thiện</div><div class="k-val">${completedParticipants.length} / 7</div></div>
+          <div class="kpi"><div class="k-label">Tỷ lệ hoàn thành tác vụ</div><div class="k-val">${enteredCount ? `${passCount}/${enteredCount} (${Math.round(passCount*100/enteredCount)}%)` : "—"}</div></div>
+          <div class="kpi"><div class="k-label">Thời gian TB (Time on Task)</div><div class="k-val">${avgTime}</div></div>
+          <div class="kpi"><div class="k-label">SEQ Trung bình (/7)</div><div class="k-val">${avgSEQ}</div></div>
+          <div class="kpi"><div class="k-label">SUS Trung bình (/100)</div><div class="k-val">${avgSUS}</div></div>
+        </div>
+
+        <div class="card">
+          <h2>Danh sách đối chiếu nhanh (Pilot + P1–P7)</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Vai trò</th>
+                <th>Họ tên</th>
+                <th>Nghề nghiệp</th>
+                <th>Ngoài HW03</th>
+                <th>Liên hệ (đã che)</th>
+                <th>Thời gian</th>
+                <th>Kết quả</th>
+                <th>SEQ</th>
+                <th>SUS</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${ROLES.map(r => {
+                const s = state[r.id];
+                const sus = calcSUS(s.sus);
+                return `<tr>
+                  <td><strong>${r.id}</strong></td>
+                  <td>${escapeHtml(s.name) || '<span class="hint">(chưa điền)</span>'}</td>
+                  <td>${escapeHtml(s.occupation) || "—"}</td>
+                  <td>${s.outsideClass ? "Có" : "Không"}</td>
+                  <td><code>${escapeHtml(s.contact) || "—"}</code></td>
+                  <td>${escapeHtml(s.timeOnTask) || "—"}</td>
+                  <td>${s.name ? escapeHtml(s.result) : "—"}</td>
+                  <td>${s.seq ? s.seq + "/7" : "—"}</td>
+                  <td>${sus.score !== null ? `<strong>${sus.score.toFixed(1)}</strong> <span class="badge ${sus.cls}">${sus.grade.split(" ")[1]}</span>` : "—"}</td>
+                </tr>`;
+              }).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    function escapeHtml(str) {
+      return String(str || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function renderSession(roleId) {
+      const s = state[roleId];
+      const susInfo = calcSUS(s.sus);
+
+      return `
+        <div class="card">
+          <details class="script-box">
+            <summary>Mở nhanh Lời dẫn & Kịch bản đọc cho người tham gia (${roleId})</summary>
+            <blockquote>
+              <strong>1. Set the Stage:</strong> "Cảm ơn bạn đã dành thời gian tham gia buổi trải nghiệm hôm nay. Mình đang đánh giá giao diện của một website bán hàng mẫu tên là <strong>EShop</strong>. Bài test này kiểm tra mức độ dễ dùng của trang web, hoàn toàn KHÔNG phải kiểm tra trình độ hay kiến thức của bạn. Trong lúc thao tác, nhờ bạn suy nghĩ thành tiếng (Think-Aloud): đang tìm gì, thấy gì, thấy kỳ lạ ở đâu thì nói ra hết. Mình sẽ chỉ quan sát chứ không nhắc bài trừ khi bạn bế tắc hoàn toàn. Bạn đồng ý cho mình quay màn hình/thu âm để làm bằng chứng học tập chứ?"
+            </blockquote>
+            <blockquote>
+              <strong>2. Kịch bản Mục tiêu (Goal-Oriented — không chỉ bước):</strong> "Bạn đang cần mua <strong>2 chiếc tai nghe chống ồn</strong> với ngân sách tối đa <strong>6.000.000 ₫/chiếc</strong> trên một trang web bán hàng mới tên là <strong>EShop</strong>. Trước hết, bạn hãy xem qua trang web để kiểm tra thông tin bản quyền/đơn vị vận hành xem cửa hàng có đáng tin cậy không; sau đó tự tìm thử xem shop có bán <strong>tai nghe Sony</strong> không — nếu không có thì tìm một mẫu tai nghe chống ồn khác phù hợp ngân sách, xem kỹ thông tin chi tiết rồi đưa <strong>2 chiếc</strong> vào giỏ hàng. Cuối cùng, hãy kiểm tra lại trong giỏ hàng để chắc chắn đã có đúng sản phẩm với đủ số lượng 2, rồi quay về lại trang đầu của cửa hàng (chưa cần thanh toán)."
+            </blockquote>
+          </details>
+        </div>
+
+        <div class="card">
+          <h2>1. Thông tin Người tham gia & Phiên (${roleId})</h2>
+          <div class="grid-3">
+            <div>
+              <label>Họ và tên thật</label>
+              <input type="text" value="${escapeHtml(s.name)}" oninput="updateField('${roleId}','name',this.value)" placeholder="Nguyễn Văn A" />
+            </div>
+            <div>
+              <label>Nghề nghiệp / Đối tượng</label>
+              <input type="text" value="${escapeHtml(s.occupation)}" oninput="updateField('${roleId}','occupation',this.value)" placeholder="VD: Kế toán / Sinh viên Kinh tế" />
+            </div>
+            <div>
+              <label>SĐT / Zalo / Email (che 4 số giữa)</label>
+              <input type="text" id="contactInput" value="${escapeHtml(s.contact)}" oninput="updateField('${roleId}','contact',this.value)" placeholder="0912****678" />
+              <button type="button" class="mask-btn" onclick="applyMask('${roleId}')">Tự động che 4 số giữa</button>
+            </div>
+            <div>
+              <label>Ngày & giờ thực hiện</label>
+              <input type="text" value="${escapeHtml(s.datetime)}" oninput="updateField('${roleId}','datetime',this.value)" placeholder="2026-11-12 20:30" />
+            </div>
+            <div>
+              <label>Kênh thực hiện</label>
+              <select onchange="updateField('${roleId}','channel',this.value)">
+                ${["Trực tiếp", "Google Meet", "Zoom / Zalo Video", "Khác"].map(opt =>
+                  `<option value="${opt}" ${s.channel === opt ? "selected" : ""}>${opt}</option>`
+                ).join("")}
+              </select>
+            </div>
+            <div>
+              <label>File / Link Video quay màn hình & âm thanh</label>
+              <input type="text" value="${escapeHtml(s.recording)}" oninput="updateField('${roleId}','recording',this.value)" placeholder="VD: P1_video.mp4 hoặc link Drive" />
+            </div>
+          </div>
+          <div class="inline-check">
+            <label><input type="checkbox" ${s.outsideClass ? "checked" : ""} onchange="updateField('${roleId}','outsideClass',this.checked)" /> Xác nhận người ngoài lớp HW03 (bắt buộc)</label>
+            <label><input type="checkbox" ${s.nonIT ? "checked" : ""} onchange="updateField('${roleId}','nonIT',this.checked)" /> Đối tượng Non-IT / không làm Tester</label>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>2. Đồng hồ Bấm giờ & Kết quả Tác vụ</h2>
+          <div class="timer-bar" style="margin-bottom:12px;">
+            <span class="timer-display" id="timerDisplay">${formatMMSS(timerSeconds)}</span>
+            <button type="button" class="primary" onclick="toggleTimer()">${timerRunning ? "Tạm dừng" : "Bắt đầu bấm giờ"}</button>
+            <button type="button" onclick="applyTimerToSession('${roleId}')">Ghi vào Time on Task</button>
+            <button type="button" onclick="resetTimer()">Reset 00:00</button>
+            <span class="hint">Mẹo: nếu người dùng kẹt > 2 phút tại 1 bước, ghi chú can thiệp tối thiểu bên dưới.</span>
+          </div>
+          <div class="grid-3">
+            <div>
+              <label>Thời gian hoàn thành (mm:ss)</label>
+              <input type="text" value="${escapeHtml(s.timeOnTask)}" oninput="updateField('${roleId}','timeOnTask',this.value)" placeholder="02:45" />
+            </div>
+            <div>
+              <label>Kết quả tác vụ</label>
+              <select onchange="updateField('${roleId}','result',this.value)">
+                ${["Thành công hoàn toàn", "Thành công có trợ giúp", "Thất bại"].map(opt =>
+                  `<option value="${opt}" ${s.result === opt ? "selected" : ""}>${opt}</option>`
+                ).join("")}
+              </select>
+            </div>
+            <div>
+              <label>Ghi chú gợi ý (> 2 phút, nếu có)</label>
+              <input type="text" value="${escapeHtml(s.interventionNote)}" oninput="updateField('${roleId}','interventionNote',this.value)" placeholder="Không can thiệp / Đã gợi ý lúc 02:15..." />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>3. Nhật ký Quan sát Thực địa (Think-Aloud Observation Log)
+            <button type="button" onclick="addLogRow('${roleId}')">+ Thêm dòng mốc thời gian</button>
+          </h2>
+          <table>
+            <thead>
+              <tr>
+                <th style="width:95px;">Mốc (mm:ss)</th>
+                <th style="width:28%;">Thao tác quan sát được</th>
+                <th style="width:32%;">Trích dẫn Think-Aloud</th>
+                <th>Điểm nghẽn / Lỗi / Do dự</th>
+                <th style="width:52px;">Xóa</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${s.logs.map((row, idx) => `
+                <tr>
+                  <td><input type="text" value="${escapeHtml(row.time)}" oninput="updateLog('${roleId}',${idx},'time',this.value)" placeholder="00:30" /></td>
+                  <td><textarea oninput="updateLog('${roleId}',${idx},'action',this.value)" placeholder="Hành động trên màn hình...">${escapeHtml(row.action)}</textarea></td>
+                  <td><textarea oninput="updateLog('${roleId}',${idx},'quote',this.value)" placeholder='"Sao bấm không thấy gì..."'>${escapeHtml(row.quote)}</textarea></td>
+                  <td><textarea oninput="updateLog('${roleId}',${idx},'friction',this.value)" placeholder="Dead click / Thiếu badge / ...">${escapeHtml(row.friction)}</textarea></td>
+                  <td><button type="button" class="danger row-del" onclick="removeLogRow('${roleId}',${idx})">✕</button></td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h2>4. Công cụ A — SEQ (Single Ease Question, 1–7)</h2>
+          <div style="font-size:13px;margin-bottom:8px;"><em>"Nhìn chung, bạn đánh giá nhiệm vụ vừa rồi ở mức nào trên thang điểm từ 1 đến 7?"</em></div>
+          <div class="likert-row">
+            ${[1,2,3,4,5,6,7].map(n => {
+              const lbl = n === 1 ? "1 (Rất khó)" : (n === 4 ? "4 (Bình thường)" : (n === 7 ? "7 (Rất dễ)" : String(n)));
+              return `<div class="likert-btn ${s.seq === n ? "selected" : ""}" onclick="updateField('${roleId}','seq',${n})">${lbl}</div>`;
+            }).join("")}
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>5. Công cụ B — Bảng Câu hỏi Chuẩn SUS (1–5)
+            <span>
+              ${susInfo.score !== null
+                ? `<span class="badge ${susInfo.cls}">SUS: ${susInfo.score.toFixed(1)} / 100 · ${susInfo.grade}</span>`
+                : `<span class="hint">Đã điền ${susInfo.answered}/10 câu</span>`
+              }
+            </span>
+          </h2>
+          <p class="hint" style="margin-top:0;">Thang Likert: <strong>1</strong> = Hoàn toàn không đồng ý &rarr; <strong>5</strong> = Hoàn toàn đồng ý</p>
+          <table>
+            <thead>
+              <tr>
+                <th style="width:52px;">Câu</th>
+                <th>Nội dung</th>
+                <th style="width:90px;">Chiều</th>
+                <th style="width:200px; text-align:center;">Điểm (1–5)</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${SUS_QUESTIONS.map((q, i) => `
+                <tr>
+                  <td><strong>Q${i + 1}</strong></td>
+                  <td>${q.text}</td>
+                  <td>${q.type === "odd" ? "Tích cực (+)" : "Tiêu cực (-)"}</td>
+                  <td>
+                    <div class="sus-radios">
+                      ${[1,2,3,4,5].map(v =>
+                        `<span class="sus-pill ${s.sus[q.id] === v ? "selected" : ""}" onclick="updateSUS('${roleId}','${q.id}',${v})">${v}</span>`
+                      ).join("")}
+                    </div>
+                  </td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h2>6. Công cụ C — Phỏng vấn Mở (Post-Session Probe Questions)</h2>
+          <div class="grid-2">
+            <div>
+              <label>1. Độ rõ ràng (Clarity) — chỗ nào khiến phải dừng suy nghĩ / cách nhận biết đã thêm vào giỏ</label>
+              <textarea oninput="updateProbe('${roleId}','clarity',this.value)">${escapeHtml(s.probes.clarity)}</textarea>
+            </div>
+            <div>
+              <label>2. Khả năng khôi phục sau lỗi (Error Recovery) — khi tìm không ra / bấm không ăn / giỏ trống</label>
+              <textarea oninput="updateProbe('${roleId}','errorRecovery',this.value)">${escapeHtml(s.probes.errorRecovery)}</textarea>
+            </div>
+            <div>
+              <label>3. Tốc độ & Hiệu quả (Speed) — bước nào mất thời gian / bấm thừa nhiều nhất</label>
+              <textarea oninput="updateProbe('${roleId}','speed',this.value)">${escapeHtml(s.probes.speed)}</textarea>
+            </div>
+            <div>
+              <label>4. Độ tin cậy & An tâm (Trust) — có đủ tin tưởng mua thật không? yên tâm / e ngại gì?</label>
+              <textarea oninput="updateProbe('${roleId}','trust',this.value)">${escapeHtml(s.probes.trust)}</textarea>
+            </div>
+          </div>
+          <div style="margin-top:12px;">
+            <label>5. Câu hỏi bổ sung theo phiên (Session-specific)</label>
+            <textarea oninput="updateProbe('${roleId}','specific',this.value)">${escapeHtml(s.probes.specific)}</textarea>
+          </div>
+          ${roleId === "Pilot" ? `
+            <div style="margin-top:12px;">
+              <label>Tinh chỉnh kịch bản / quy trình sau Pilot (trước khi chạy P1–P7)</label>
+              <textarea oninput="updateField('Pilot','pilotAdjustments',this.value)" placeholder="Kịch bản có điểm nào người Pilot hỏi lại không? Có cần sửa câu chữ/môi trường không?">${escapeHtml(s.pilotAdjustments)}</textarea>
+            </div>
+          ` : ""}
+        </div>
+      `;
+    }
+
+    function renderContent() {
+      const el = document.getElementById("content");
+      el.innerHTML = activeTab === "SUMMARY" ? renderSummary() : renderSession(activeTab);
+    }
+
+    function updateField(roleId, field, value) {
+      state[roleId][field] = value;
+      saveState();
+      if (field === "seq") renderContent();
+    }
+
+    function applyMask(roleId) {
+      const masked = maskMiddle4(state[roleId].contact);
+      state[roleId].contact = masked;
+      saveState();
+      renderContent();
+      showToast("Đã che 4 ký tự giữa!");
+    }
+
+    function updateSUS(roleId, qid, val) {
+      state[roleId].sus[qid] = val;
+      saveState();
+      renderContent();
+    }
+
+    function updateLog(roleId, idx, field, val) {
+      state[roleId].logs[idx][field] = val;
+      saveState();
+    }
+
+    function addLogRow(roleId) {
+      const stamp = timerSeconds > 0 ? formatMMSS(timerSeconds) : "";
+      state[roleId].logs.push({ time: stamp, action: "", quote: "", friction: "" });
+      saveState();
+      renderContent();
+    }
+
+    function removeLogRow(roleId, idx) {
+      if (state[roleId].logs.length <= 1) return;
+      state[roleId].logs.splice(idx, 1);
+      saveState();
+      renderContent();
+    }
+
+    function updateProbe(roleId, field, val) {
+      state[roleId].probes[field] = val;
+      saveState();
+    }
+
+    function toggleTimer() {
+      if (timerRunning) {
+        clearInterval(timerInterval);
+        timerRunning = false;
+      } else {
+        timerRunning = true;
+        timerInterval = setInterval(() => {
+          timerSeconds++;
+          const d = document.getElementById("timerDisplay");
+          if (d) d.textContent = formatMMSS(timerSeconds);
+        }, 1000);
+      }
+      renderContent();
+    }
+
+    function resetTimer() {
+      clearInterval(timerInterval);
+      timerRunning = false;
+      timerSeconds = 0;
+      renderContent();
+    }
+
+    function applyTimerToSession(roleId) {
+      state[roleId].timeOnTask = formatMMSS(timerSeconds);
+      saveState();
+      renderContent();
+      showToast(`Đã ghi ${state[roleId].timeOnTask} vào Time on Task`);
+    }
+
+    function buildMarkdown() {
+      let md = `# TASK 2 — GIAI ĐOẠN 2: DỮ LIỆU PHIÊN ĐÁNH GIÁ (PILOT + P1–P7)\n\n`;
+      md += `## 1. Bảng Danh sách Người tham gia\n\n`;
+      md += `| Vai trò | Họ và tên thật | Nghề nghiệp / Đối tượng | Ngoài lớp HW03? | Ngoài IT? | SĐT / Zalo / Email *(che 4 số giữa)* | Ngày giờ | Kênh | Video bằng chứng | Thời gian | Kết quả | SEQ | SUS |\n`;
+      md += `| :-: | :--- | :--- | :---: | :---: | :--- | :---: | :---: | :--- | :---: | :---: | :---: | :---: |\n`;
+      ROLES.forEach(r => {
+        const s = state[r.id];
+        const sus = calcSUS(s.sus);
+        md += `| **${r.id}** | ${s.name || ""} | ${s.occupation || ""} | ${s.outsideClass ? "Có" : "Không"} | ${s.nonIT ? "Có" : "Không"} | \`${s.contact || ""}\` | ${s.datetime || ""} | ${s.channel || ""} | ${s.recording || ""} | ${s.timeOnTask || ""} | ${s.result || ""} | ${s.seq ? s.seq + "/7" : ""} | ${sus.score !== null ? sus.score.toFixed(1) : ""} |\n`;
+      });
+
+      ROLES.forEach((r, idx) => {
+        const s = state[r.id];
+        const sus = calcSUS(s.sus);
+        md += `\n---\n\n## ${idx + 2}. Biên bản Phiên ${r.id}\n\n`;
+        md += `- **Người tham gia:** ${s.name || "[Chưa điền]"} | **Nghề nghiệp:** ${s.occupation || "[...]"} | **Ngoài lớp HW03:** ${s.outsideClass ? "Có" : "Không"}\n`;
+        md += `- **SĐT/Zalo/Email:** \`${s.contact || "[09xx****xxx]"}\`\n`;
+        md += `- **Ngày giờ:** ${s.datetime || "YYYY-MM-DD HH:mm"} | **Hình thức:** ${s.channel}\n`;
+        md += `- **Bằng chứng quay màn hình:** ${s.recording || "[Tên file / link]"}\n`;
+        md += `- **Thời gian hoàn thành:** ${s.timeOnTask || "[mm:ss]"} | **Kết quả:** ${s.result}\n`;
+        if (s.interventionNote) md += `- **Can thiệp điều phối viên:** ${s.interventionNote}\n`;
+        md += `- **Điểm SEQ (1–7):** ${s.seq ?? "..."}/7 | **Điểm SUS:** ${sus.score !== null ? sus.score.toFixed(1) + "/100 (" + sus.grade + ")" : ".../100"}\n\n`;
+
+        md += `### Nhật ký Quan sát (${r.id})\n\n`;
+        md += `| Mốc thời gian | Thao tác quan sát được | Trích dẫn Think-Aloud | Điểm nghẽn / Lỗi / Do dự |\n`;
+        md += `| :---: | :--- | :--- | :--- |\n`;
+        s.logs.forEach(l => {
+          md += `| \`${l.time || ""}\` | ${(l.action || "").replace(/\n/g, " ")} | ${(l.quote || "").replace(/\n/g, " ")} | ${(l.friction || "").replace(/\n/g, " ")} |\n`;
+        });
+
+        md += `\n### Điểm SUS (${r.id})\n\n`;
+        md += `| Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Tổng quy đổi | Điểm SUS |\n`;
+        md += `| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |\n`;
+        const qs = SUS_QUESTIONS.map(q => s.sus[q.id] ?? "").join(" | ");
+        md += `| ${qs} | ${sus.score !== null ? sus.rawSum : ""} | ${sus.score !== null ? sus.score.toFixed(1) : ""} |\n\n`;
+
+        md += `### Phỏng vấn Mở (${r.id})\n`;
+        md += `1. **Độ rõ ràng (Clarity):** ${s.probes.clarity || ""}\n`;
+        md += `2. **Khả năng khôi phục sau lỗi (Error Recovery):** ${s.probes.errorRecovery || ""}\n`;
+        md += `3. **Tốc độ & Hiệu quả (Speed):** ${s.probes.speed || ""}\n`;
+        md += `4. **Độ tin cậy & An tâm (Trust):** ${s.probes.trust || ""}\n`;
+        md += `5. **Câu hỏi bổ sung theo phiên:** ${s.probes.specific || ""}\n`;
+        if (r.id === "Pilot") {
+          md += `\n### Tinh chỉnh sau Pilot\n${s.pilotAdjustments || ""}\n`;
+        }
+      });
+
+      return md;
+    }
+
+    async function copyMarkdown() {
+      const md = buildMarkdown();
+      try {
+        await navigator.clipboard.writeText(md);
+        showToast("Đã copy toàn bộ Markdown vào clipboard!");
+      } catch (e) {
+        downloadMarkdown();
+      }
+    }
+
+    function downloadFile(filename, content, mime) {
+      const blob = new Blob([content], { type: mime });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function downloadMarkdown() {
+      downloadFile("task2_phase2_session_logs.md", buildMarkdown(), "text/markdown;charset=utf-8");
+      showToast("Đã tải file task2_phase2_session_logs.md");
+    }
+
+    function downloadJSON() {
+      downloadFile("task2_phase2_sessions.json", JSON.stringify(state, null, 2), "application/json");
+      showToast("Đã tải file task2_phase2_sessions.json");
+    }
+
+    function importJSONPrompt() {
+      document.getElementById("jsonFileInput").click();
+    }
+
+    document.getElementById("jsonFileInput").addEventListener("change", (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const parsed = JSON.parse(reader.result);
+          ROLES.forEach(r => {
+            state[r.id] = Object.assign(createEmptySession(r.id), parsed[r.id] || {});
+          });
+          saveState();
+          renderContent();
+          showToast("Đã nạp dữ liệu JSON thành công!");
+        } catch (err) {
+          alert("File JSON không hợp lệ.");
+        }
+      };
+      reader.readAsText(file);
+      e.target.value = "";
+    });
+
+    function resetAll() {
+      if (!confirm("Xóa toàn bộ dữ liệu đã nhập trên trình duyệt này?")) return;
+      ROLES.forEach(r => { state[r.id] = createEmptySession(r.id); });
+      saveState();
+      renderContent();
+      showToast("Đã reset toàn bộ form.");
+    }
+
+    renderTabs();
+    renderContent();
+  </script>
+</body>
+</html>
+
